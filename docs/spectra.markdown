@@ -1,6 +1,8 @@
+---
 layout: page
 title: "Spectra of benchmark detached eclipsing binary stars"
 permalink: /spectra
+---
 
 ## Spectra of benchmark detached eclipsing binary stars
 
