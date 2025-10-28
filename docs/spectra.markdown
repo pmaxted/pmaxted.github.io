@@ -4,27 +4,13 @@ permalink: /spectra
 <html>
 <head>
    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-   <meta name="GENERATOR" content="Mozilla/4.77 [en] (X11; U; Linux 2.2.14-5.0smp i686) [Netscape]">
    <meta name="Author" content="Pierre Maxted">
    <title>Spectra of benchmark detached eclipsing binary stars</title>
-
-   <style>
-      table, th, td {
-         border: 1px solid white;
-         border-collapse: collapse;
-      }
-      th, td {
-         padding-top: 1px;
-         padding-bottom: 1px;
-         padding-left: 6px;
-         padding-right: 4px;
-      }
-   </style>
 </head>
-<body text="#DDFFFF" bgcolor="#000033" link="#FFFFCC" vlink="#FFCCFF" alink="#FF6666">
+<body>
 
 <h1>
-<i><font color="#FFFF99">Spectra of benchmark detached eclipsing binary stars</font></i></h1>
+<i><font >Spectra of benchmark detached eclipsing binary stars</font></i></h1>
 <hr WIDTH="100%">
 
 This web page is a collection of spectra for stars in eclipsing binary systems
