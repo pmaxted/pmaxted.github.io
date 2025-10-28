@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Spectra of benchmark detached eclipsing binary stars"
 permalink: /spectra
 ---
