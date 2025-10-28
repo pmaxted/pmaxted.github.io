@@ -1,7 +1,6 @@
 layout: page
 title: "Spectra of benchmark detached eclipsing binary stars"
 permalink: /spectra
-<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
 <html>
 <head>
    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
