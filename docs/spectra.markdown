@@ -10,7 +10,7 @@ This web page is a collection of spectra for stars in eclipsing binary systems f
 
 > $$ T_{\rm eff} = (4F_{\rm bol}  \theta/\sigma_{\rm SB})^{1/4},$$
 
-where $$\sigma_{\rm SB}$$ is the Stefan-Boltzmann constant and $$\theta = 2\,R_{\star}/d$$ is the angular diameter of a star of radius $$R_{\star}$$ at distance $$d$$.
+where $\sigma_{\rm SB}$ is the Stefan-Boltzmann constant and $$\theta = 2\,R_{\star}/d$$ is the angular diameter of a star of radius $$R_{\star}$$ at distance $$d$$.
 The full method is described in [Miller, Maxted and Smalley, 2020](https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.2899M/abstract).
 
 
