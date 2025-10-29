@@ -76,16 +76,14 @@ The format of the disentangled spectra is suitable for use with [iSpec](https://
 
 
 ##### AI Phe A, F7 V
-t5 
-
- - T$\_{\rm eff} = 6199 \pm 33$ K
- - log $g = 4.002 \pm 0.001$
+ - T$`_{\rm eff} = 6199 \pm 33`$ K
+ - $`\log g = 4.002 \pm 0.001`$
  - Mass $ = 1.1938 \pm 0.0008 M_{\odot}$
  - Radius $ = 1.8050 \pm 0.0022 R_{\odot}$
 
 ##### AI Phe B, K0 IV
- - T$_{\rm eff} = 5094 \pm 27$ K
- - $\log g  = 3.598 \pm 0.001$
+ - T$`_{\rm eff} = 5094 \pm 27`$ K
+ - $`\log g  = 3.598 \pm 0.001`$
  - Mass  $ = 1.2438 \pm 0.0008 M_{\odot}$
  - Radius $ = 2.9332 \pm 0.0023 R_{\odot}$
 
