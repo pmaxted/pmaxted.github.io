@@ -13,8 +13,6 @@
 
 <p>This web page is a collection of spectra for stars in eclipsing binary systems for which the effective temperature has been measured directly from the its angular diameter and bolometric flux, i.e.</p>
 
-TEST2 
-
 <blockquote>
 \[T_{\rm eff} = (4F_{\rm bol}  \theta/\sigma_{\rm SB})^{1/4},\]
 </blockquote>
@@ -62,14 +60,14 @@ Errors in normalisation for the input spectra result in some parts of the disent
 <h3 id="list-of-stars">List of stars</h3>
 <ul>
   <li><a href="#ai_phezip">AI Phe, F7 V + K0 IV</a></li>
-  <li><a href="#eblm_j011331_azip">EBLM J0113+31 A, G0 V</a></li>
-  <li>HD 22064, F2V</li>
-  <li>CPD-54 810, F5 IV + F6 V</li>
-  <li>EBLM J0608-59A, G0 V</li>
-  <li>BEBOP-3_A, F9 V</li>
+  <li><a href="#EBLM_J0113+31_A">EBLM J0113+31 A, G0 V</a></li>
+  <li><a href="#HD_22064_A">HD 22064, F2V</a></li>
+  <li><a href="#CPD-54_810">CPD-54 810, F5 IV + F6 V</a></li>
+  <li><a href="#EBLM_J0608-59_A">EBLM J0608-59A, G0 V</a></li>
+
 </ul>
 
-<h4 id="ai_phezip">AI_Phe.zip</h4>
+<h4 id="ai_phezip"><a href="data/AI_Phe.zip">AI_Phe.zip</a></h4>
 <p>The folder <code class="language-plaintext highlighter-rouge">uves/</code> contains 4 spectra of AI Phe B obtained with the red (arm R\(\approx\)100,000) and blue arm (R\(\approx\)80,000) of the UVES spectrograph during the total eclipse of the F7V companion. The raw data were reprocessed using version 6.1.8 of the UVES pipeline and renormalized using the algorithm described in <a href="https://ui.adsabs.harvard.edu/abs/2023ApJS..266...11B/abstract">Borisov et al., 2023</a>.</p>
 
 <p>There is a glitch due to poor order tracing/profile fitting around 610 nm. This appears to be due to a spurious absorption feature at 616.0 - 616.5 nm that can be seen in the spectra extracted using the “linear” mode of the uves pipeline (<code class="language-plaintext highlighter-rouge">uves/FLUX_SCI_POINT_REDU_L...fits</code>).
@@ -358,7 +356,223 @@ The spectra include orders where there are telluric features, (e.g. order 97). T
   <li>Miller et al., 2020</li>
 </ul>
 
-<h3 id="eblm_j011331_azip">EBLM_J0113+31_A.zip</h3>
+
+<hr WIDTH="100%">
+<a id="EBLM_J0113+31_A">
+<h3><a href="data/EBLM_J0113+31_A.zip">EBLM_J0113+31_A.zip</a></h3>
+</a>
+<dl>
+<dt>J0113+31_FIES.fits</dt>
+<dd> Average FIES optical spectrum (R&approx;46,000). Flux from the M-dwarf companion is negligible (&lt;0.1&thinsp;%).</dd>
+<dt>J0113+31_SPIRou.fits</dt>
+<dd> Average SPIRou spectrum (R&approx;75,000) after subtraction of
+a model M-dwarf spectrum to correct for the flux contribution from the M-dwarf
+companion (&approx;0.5&thinsp;%)</dd>
+<p>
+<ul>
+  <li>T<sub>eff</sub> = 6124 &plusmn; 40&thinsp;K</li>
+  <li>log g (cgs) = 4.148 &plusmn; 0.006</li>
+  <li>Mass = 1.029  &plusmn; 0.025  M<sub>&odot;</sub></li>
+  <li>Radius = 1.417  &plusmn; 0.014  R<sub>&odot;</sub></li>
+  <li>[Fe/H] &approx; &minus;0.3  &plusmn; 0.1 </li>
+</ul>
+
+<h5>Photometry</h5>
+ See Maxted et al. (2022) <a target="_blank" href="https://academic.oup.com/view-large/356978531">Table 7</a>
+
+<h5>References</h5>
+<ul>
+  <li><a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.513.6042M/abstract" target="_blank">Maxted et al., 2022</a></li>
+</ul>
+
+
+<hr WIDTH="100%">
+<a id="HD_22064_A">
+<h3><a href="data/HD_22064_A.zip">HD_22064_A.zip</a></h3>
+</a>
+
+The file <i>hd22064_apogee.txt</i> contains the average APOGEE spectrum
+(R&approx;22,500) of the primary after subtraction of a model M-dwarf spectrum
+to correct for the flux contribution from the M-dwarf companion
+(&approx;4.4&thinsp;%). This file can be read directly into
+<a href="https://www.blancocuaresma.com/s/iSpec/manual/usage/basics"
+ target="_blank">iSpec</a>.
+<p>
+ The file <i>hd22064_apogee.csv</i> contains the same spectrum in CSV format
+ plus the reconstructred spectrum described in <a
+ href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.522.2683M/abstract"
+ target="_blank">Maxted, 2023</a>.
+
+<B>N.B.</B> Broad spectral features such as absorption lines due to hydrogen
+are badly affected by the processing steps leading to the production of these
+spectra. In particular, the cores of the hydrogen Brackett absorption lines
+are not accurate and should not be used for analysis.
+
+<p>
+<ul>
+  <li>T<sub>eff</sub> = 6763 &plusmn; 39&thinsp;K</li>
+  <li>log g (cgs) = 4.184 &plusmn; 0.006</li>
+  <li>Mass = 1.345  &plusmn; 0.031  M<sub>&odot;</sub></li>
+  <li>Radius = 1.554  &plusmn; 0.014  R<sub>&odot;</sub></li>
+  <li>[Fe/H] &approx; &minus;0.05 &plusmn; 0.15</li>
+</ul>
+
+<h5>Photometry</h5>
+
+ See Maxted et al. (2023) <a target="_blank" href="https://academic.oup.com/view-large/403693538">Table 10</a>
+
+<h5>References</h5>
+<ul>
+  <li><a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.522.2683M/abstract" target="_blank">Maxted, 2023</a></li>
+</ul>
+
+
+<hr WIDTH="100%">
+<a id="CPD-54_810">
+<h3><a href="data/CPD-54_810.zip">CPD-54_810.zip</a></h3>
+</a>
+
+Disentangled <a
+href="https://www.eso.org/sci/facilities/lasilla/instruments/feros.html",
+                 target="_blank">FEROS</a>
+spectra for both components over the wavelength range
+495.1&thinsp;&minus;&thinsp;580.2&nbsp;nm.
+<p>
+The format of the disentangled spectra is suitable for use with
+<a href="https://www.blancocuaresma.com/s/iSpec/manual/usage/basics"
+ target="_blank">iSpec</a>.
+
+<p>
+The 5 original FEROS spectra are included in the zip file. As can be seen, these are spectra
+are quite noisy and badly affected by outliers in a some wavelength regions.
+Several post-processing steps were required to obtain a consistent
+normalisation between the spectra so there are some regions where the flux
+ratio may not be very accurate (see <a href='#Note'>note on disentangling</a>).
+The disentangling process is quite sensitive to outliers so some line
+profiles may be badly distorted by an outlier in one of the input spectra. It
+is recommended to check the raw spectra if you are not able to get a good fit
+to some of the spectral features or find strange abundances based on only a
+few lines.
+<p>
+The format of the raw data is described <a
+href="https://archive.eso.org/cms/eso-archive-news/release-of-uves-echelle-science-data-products.html"
+target="_blank">here</a>. These spectra can also be read directly into iSpec,
+but the wavelength scale is &#8491; so remember to apply the mathematical expression <i> waveobs/10</i> to get
+wavelengths in nm.
+<p>
+
+<h5>CPD-54 810 A, F5 IV</h5>
+<ul>
+  <li>T<sub>eff</sub> = 6462 &plusmn; 43&thinsp;K</li>
+  <li>log g (cgs) = 3.984 &plusmn; 0.001</li>
+  <li>Mass = 1.309  &plusmn; 0.005  M<sub>&odot;</sub></li>
+  <li>Radius = 1.929  &plusmn; 0.003  R<sub>&odot;</sub></li>
+  <li>[Fe/H] &approx; &minus;0.0 &plusmn; 0.2
+</ul>
+
+<h5>CPD-54 810 B, F6 V</h5>
+<ul>
+  <li>T<sub>eff</sub> = 6331 &plusmn; 43&thinsp;K</li>
+  <li>log g (cgs) = 4.330 &plusmn; 0.003</li>
+  <li>Mass = 1.090  &plusmn; 0.003  M<sub>&odot;</sub></li>
+  <li>Radius = 1.182  &plusmn; 0.004  R<sub>&odot;</sub></li>
+</ul>
+
+<h5>Photometry</h5>
+ The following table gives the combined magnitude of the binary system, the
+ flux ratio in that band from the light curve analysis, and the individual
+ magnitudes of the two stars calculated from these input values.
+
+ <p>
+ <b>N.B.</b> Magnitudes for both stars in other photometric bands can be
+ estimated from the analysis described in Miller et al. (2022). This will
+ take some effort, but can be done if someone can  make good use of the
+ results.
+ <p>
+<table>
+  <tr>
+    <th>Band</th>
+    <th>Magnitude</th>
+    <th>Source</th>
+    <th>Flux ratio (B/A)</th>
+    <th>Ref.</th>
+    <th>m<sub>A</sub></th>
+    <th>m<sub>B</sub></th>
+  </tr>
+<tr>
+  <td>B (Tycho)</td>
+  <td align="right">10.971 &plusmn; 0.049</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/1984ApJ...282..748H/abstract">2000A&A...355L..27H</a></td>
+  <td align="right">0.330 &plusmn; 0.001</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.517.5129M/abstract">2022MNRAS.517.5129M</a></td>
+  <td align="right">11.28 &plusmn; 0.05</td>
+  <td align="right">12.48 &plusmn; 0.05</td>
+</tr>
+<tr>
+  <td>V (Tycho)</td>
+  <td align="right">10.560 &plusmn; 0.047</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/1984ApJ...282..748H/abstract">2000A&A...355L..27H</a></td>
+  <td align="right">0.341 &plusmn; 0.001</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.517.5129M/abstract">2022MNRAS.517.5129M</a></td>
+  <td align="right">10.88 &plusmn; 0.05 </td>
+  <td align="right">12.05 &plusmn; 0.05 </td>
+</tr>
+<tr>
+  <td>I (Gunn-i)</td>
+  <td align="right">9.922 &plusmn; 0.03 </td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/2005yCat.2263....0D/abstract">2005yCat.2263....0D</a></td>
+  <td align="right">0.352 &plusmn; 0.001</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.517.5129M/abstract">2022MNRAS.517.5129M</a></td>
+  <td align="right">10.25 &plusmn; 0.03 </td>
+  <td align="right">11.38 &plusmn; 0.03 </td>
+</tr>
+</table>
+
+
+
+<h5>References</h5>
+<ul>
+  <li><a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.517.5129M/abstract"
+      target="_blank">Miller et al., 2022</a></li>
+</ul>
+
+<hr WIDTH="100%">
+<a id="EBLM_J0608-59_A">
+<h3><a href="data/EBLM_J0608-59_A.zip">EBLM_J0608-59_A.zip</a></h3>
+</a>
+<dl>
+<dt>J0608-59_ESPRESSO.fits</dt>
+<dd> Average ESPRESSO optical spectrum (R&approx;140,000). Flux from the
+M-dwarf companion is negligible (&lt;0.2&thinsp;% average in Gaia RP band).</dd>
+<p>
+<ul>
+  <li>T<sub>eff</sub> = 6031 &plusmn; 56&thinsp;K</li>
+  <li>log g (cgs) = 4.24  &plusmn; 0.01 </li>
+  <li>Mass = 1.098  &plusmn; 0.018  M<sub>&odot;</sub></li>
+  <li>Radius = 1.321  &plusmn; 0.017  R<sub>&odot;</sub></li>
+  <li>[Fe/H] &approx; &minus;0.01 &plusmn; 0.05</li>
+</ul>
+
+<h5>Photometry</h5>
+ See Maxted et al. (2024)  <a target="_blank" href="http://arxiv.org/abs/2406.04204">Table 1</a>
+
+<h5>References</h5>
+<ul>
+  <li><a href="http://arxiv.org/abs/2406.04204" target="_blank">Maxted et al., 2024</a></li>
+</ul>
+
+
+
+<hr WIDTH="100%">
+<br>Dr Pierre Maxted (<a href="mailto:p.maxted@keele.ac.uk">p.maxted@keele.ac.uk</a>)
+<br>Astrophysics Group
+<br>Keele University, Staffordshire, ST5 5BG
+<br> Tel:  +44-(0)1782-733457
+<br>
+<hr WIDTH="100%">
+</body>
+</html>
+
 
   </body>
 </html>
