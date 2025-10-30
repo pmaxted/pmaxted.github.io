@@ -1,0 +1,894 @@
+
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Pierre Maxted">
+   <title>Observability of PLATO benchmark eclipsing binaries</title>
+</head>
+<body text="#CCFFFF" bgcolor="#000033" link="#FFFFCC" vlink="#FFCCFF" alink="#FF6666">
+
+<h1>Observability of PLATO benchmark eclipsing binaries</h1>
+
+<h2>From 2025-11-01 to 2026-03-31 </h2>
+<p>Nights are labelled by the local date at sunset.
+<p>Plots run from sunset to sunrise. 
+<p>Blue shading shows times of civil, nautical and astronomical twilight.
+<p>Phase 0 corresponds to the time of primary eclipse (transit).
+<h2> Observing site information </h2>
+
+<table>
+ <tr>
+  <th align="left">Name</th>
+  <th align="left">Longitude</th>
+  <th align="left">Latitude</th>
+  <th align="left">Elevation</th>
+  <th align="left">Time zone</th>
+ </tr>
+<tr><td align="left"><a href="#Benson, AZ">Benson, AZ</a></td><td align="right">-110.2945</td><td align="right">31.9679</td><td align="right">1093 m</td><td align="left">US/Mountain</td></tr>
+<tr><td align="left"><a href="#Keele, UK">Keele, UK</a></td><td align="right">-2.2733</td><td align="right">53.0034</td><td align="right">200 m</td><td align="left">Europe/London</td></tr>
+<tr><td align="left"><a href="#Pyskowice">Pyskowice</a></td><td align="right">18.6326</td><td align="right">50.3925</td><td align="right">222 m</td><td align="left">Europe/Warsaw</td></tr>
+<tr><td align="left"><a href="#Tonantzintla">Tonantzintla</a></td><td align="right">-98.3151</td><td align="right">19.0315</td><td align="right">2166 m</td><td align="left">America/Mexico_City</td></tr>
+<tr><td align="left"><a href="#Otivar">Otivar</a></td><td align="right">-3.7032</td><td align="right">36.8285</td><td align="right">755 m</td><td align="left">Europe/Madrid</td></tr>
+<tr><td align="left"><a href="#ROTUZ50">ROTUZ50</a></td><td align="right">-70.6942</td><td align="right">-30.1431</td><td align="right">1478 m</td><td align="left">Chile/Continental</td></tr>
+<tr><td align="left"><a href="#Perth">Perth</a></td><td align="right">115.8500</td><td align="right">-31.9500</td><td align="right">50 m</td><td align="left">Australia/Perth</td></tr>
+<tr><td align="left"><a href="#Sao Paulo">Sao Paulo</a></td><td align="right">-46.6388</td><td align="right">-23.5489</td><td align="right">760 m</td><td align="left">America/Sao_Paulo</td></tr>
+</table>
+<h2> Target Information </h2>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: left;">
+      <th>Star</th>
+      <th>Coordinates</th>
+      <th>Mag</th>
+      <th>T_0</th>
+      <th>PERIOD</th>
+      <th>WIDTH1</th>
+      <th>DEPTH1</th>
+      <th>PHASE2</th>
+      <th>WIDTH2</th>
+      <th>DEPTH2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HD_4875</td>
+      <td>J005039.99-183021.3</td>
+      <td>8.41</td>
+      <td>2458738.6177</td>
+      <td>13.635561</td>
+      <td>0.023</td>
+      <td>0.120</td>
+      <td>0.4640</td>
+      <td>0.0160</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>HD_22064</td>
+      <td>J033327.57+000710.8</td>
+      <td>8.74</td>
+      <td>2458578.1294</td>
+      <td>9.134881</td>
+      <td>0.043</td>
+      <td>0.100</td>
+      <td>0.4453</td>
+      <td>0.0160</td>
+      <td>0.017</td>
+    </tr>
+    <tr>
+      <td>HD_287990</td>
+      <td>J053104.20+011115.5</td>
+      <td>9.55</td>
+      <td>2458479.1164</td>
+      <td>12.937789</td>
+      <td>0.023</td>
+      <td>0.170</td>
+      <td>0.2912</td>
+      <td>0.0230</td>
+      <td>0.029</td>
+    </tr>
+    <tr>
+      <td>BD-08_1175</td>
+      <td>J053655.83-084757.6</td>
+      <td>9.69</td>
+      <td>2458834.0343</td>
+      <td>17.703251</td>
+      <td>0.014</td>
+      <td>0.190</td>
+      <td>0.3852</td>
+      <td>0.0190</td>
+      <td>0.028</td>
+    </tr>
+    <tr>
+      <td>CD-27_2812</td>
+      <td>J061259.66-275249.4</td>
+      <td>9.26</td>
+      <td>2458767.3708</td>
+      <td>7.835742</td>
+      <td>0.030</td>
+      <td>0.100</td>
+      <td>0.5370</td>
+      <td>0.0320</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>CD-31_3271</td>
+      <td>J062448.93-315152.2</td>
+      <td>9.40</td>
+      <td>2458488.4687</td>
+      <td>5.620431</td>
+      <td>0.030</td>
+      <td>0.190</td>
+      <td>0.5002</td>
+      <td>0.0300</td>
+      <td>0.015</td>
+    </tr>
+    <tr>
+      <td>TYC_8547-22-1</td>
+      <td>J063658.94-582736.6</td>
+      <td>9.54</td>
+      <td>2458867.7506</td>
+      <td>4.241822</td>
+      <td>0.047</td>
+      <td>0.140</td>
+      <td>0.5000</td>
+      <td>0.0470</td>
+      <td>0.015</td>
+    </tr>
+    <tr>
+      <td>EPIC_212822491</td>
+      <td>J134419.44-044939.0</td>
+      <td>10.65</td>
+      <td>2457942.6316</td>
+      <td>14.320644</td>
+      <td>0.021</td>
+      <td>0.170</td>
+      <td>0.5000</td>
+      <td>0.0210</td>
+      <td>0.019</td>
+    </tr>
+    <tr>
+      <td>TYC_4196-1980-1</td>
+      <td>J163237.51+654608.8</td>
+      <td>10.45</td>
+      <td>2458691.1004</td>
+      <td>19.479580</td>
+      <td>0.025</td>
+      <td>0.144</td>
+      <td>0.5963</td>
+      <td>0.0160</td>
+      <td>0.038</td>
+    </tr>
+    <tr>
+      <td>CD-82_293</td>
+      <td>J171454.74-825118.9</td>
+      <td>9.05</td>
+      <td>2458656.0642</td>
+      <td>6.356919</td>
+      <td>0.036</td>
+      <td>0.200</td>
+      <td>0.4961</td>
+      <td>0.0360</td>
+      <td>0.026</td>
+    </tr>
+    <tr>
+      <td>TYC_2645-1130-1</td>
+      <td>J184049.15+343334.5</td>
+      <td>9.83</td>
+      <td>2459019.4041</td>
+      <td>19.228890</td>
+      <td>0.012</td>
+      <td>0.203</td>
+      <td>0.7438</td>
+      <td>0.0190</td>
+      <td>0.024</td>
+    </tr>
+    <tr>
+      <td>TYC_3119-2275-1</td>
+      <td>J185353.10+374101.2</td>
+      <td>10.28</td>
+      <td>2458684.1938</td>
+      <td>8.515790</td>
+      <td>0.045</td>
+      <td>0.307</td>
+      <td>0.5207</td>
+      <td>0.0190</td>
+      <td>0.100</td>
+    </tr>
+    <tr>
+      <td>TYC_8829-111-1</td>
+      <td>J224458.55-581601.0</td>
+      <td>10.59</td>
+      <td>2458341.7238</td>
+      <td>31.824200</td>
+      <td>0.010</td>
+      <td>0.290</td>
+      <td>0.5035</td>
+      <td>0.0085</td>
+      <td>0.038</td>
+    </tr>
+  </tbody>
+</table><a id="Benson, AZ"><h3>Benson, AZ</h3></a>
+<ul>
+<li><a href="figs/Benson,_AZ_2025-11-03_BD-08_1175.png" target="_blank">2025-11-03: BD-08_1175,  0.377 -  0.390</a></li>
+<li><a href="figs/Benson,_AZ_2025-11-04_TYC_3119-2275-1.png" target="_blank">2025-11-04: TYC_3119-2275-1,  0.012 -  0.026</a></li>
+<li><a href="figs/Benson,_AZ_2025-11-05_CD-27_2812.png" target="_blank">2025-11-05: CD-27_2812,  0.006 -  0.009</a></li>
+<li><a href="figs/Benson,_AZ_2025-11-09_HD_4875.png" target="_blank">2025-11-09: HD_4875,  0.010 -  0.023</a></li>
+<li><a href="figs/Benson,_AZ_2025-11-09_HD_287990.png" target="_blank">2025-11-09: HD_287990, -0.023 - -0.001</a></li>
+<li><a href="figs/Benson,_AZ_2025-11-10_HD_22064.png" target="_blank">2025-11-10: HD_22064, -0.007 -  0.026</a></li>
+<li><a href="figs/Benson,_AZ_2025-11-10_TYC_4196-1980-1.png" target="_blank">2025-11-10: TYC_4196-1980-1, -0.007 - -0.005</a></li>
+<li><a href="figs/Benson,_AZ_2025-11-13_HD_287990.png" target="_blank">2025-11-13: HD_287990,  0.286 -  0.309</a></li>
+<li><a href="figs/Benson,_AZ_2025-11-14_HD_22064.png" target="_blank">2025-11-14: HD_22064,  0.430 -  0.462</a></li>
+<li><a href="figs/Benson,_AZ_2025-11-14_BD-08_1175.png" target="_blank">2025-11-14: BD-08_1175, -0.004 -  0.011</a></li>
+<li><a href="figs/Benson,_AZ_2025-11-15_HD_4875.png" target="_blank">2025-11-15: HD_4875,  0.448 -  0.462</a></li>
+<li><a href="figs/Benson,_AZ_2025-11-17_CD-27_2812.png" target="_blank">2025-11-17: CD-27_2812,  0.533 -  0.536</a></li>
+<li><a href="figs/Benson,_AZ_2025-11-19_HD_22064.png" target="_blank">2025-11-19: HD_22064, -0.025 -  0.008</a></li>
+<li><a href="figs/Benson,_AZ_2025-11-21_BD-08_1175.png" target="_blank">2025-11-21: BD-08_1175,  0.391 -  0.405</a></li>
+<li><a href="figs/Benson,_AZ_2025-11-21_TYC_3119-2275-1.png" target="_blank">2025-11-21: TYC_3119-2275-1,  0.007 -  0.017</a></li>
+<li><a href="figs/Benson,_AZ_2025-11-22_HD_287990.png" target="_blank">2025-11-22: HD_287990, -0.021 -  0.003</a></li>
+<li><a href="figs/Benson,_AZ_2025-11-23_HD_22064.png" target="_blank">2025-11-23: HD_22064,  0.412 -  0.445</a></li>
+<li><a href="figs/Benson,_AZ_2025-11-26_HD_287990.png" target="_blank">2025-11-26: HD_287990,  0.288 -  0.311</a></li>
+<li><a href="figs/Benson,_AZ_2025-11-28_HD_22064.png" target="_blank">2025-11-28: HD_22064, -0.042 - -0.009</a></li>
+<li><a href="figs/Benson,_AZ_2025-12-06_HD_4875.png" target="_blank">2025-12-06: HD_4875, -0.015 - -0.002</a></li>
+<li><a href="figs/Benson,_AZ_2025-12-08_TYC_3119-2275-1.png" target="_blank">2025-12-08: TYC_3119-2275-1,  0.003 -  0.008</a></li>
+<li><a href="figs/Benson,_AZ_2025-12-09_HD_287990.png" target="_blank">2025-12-09: HD_287990,  0.290 -  0.313</a></li>
+<li><a href="figs/Benson,_AZ_2025-12-18_HD_287990.png" target="_blank">2025-12-18: HD_287990, -0.016 -  0.007</a></li>
+<li><a href="figs/Benson,_AZ_2025-12-22_HD_287990.png" target="_blank">2025-12-22: HD_287990,  0.292 -  0.315</a></li>
+<li><a href="figs/Benson,_AZ_2025-12-22_CD-27_2812.png" target="_blank">2025-12-22: CD-27_2812, -0.012 - -0.009</a></li>
+<li><a href="figs/Benson,_AZ_2025-12-26_HD_4875.png" target="_blank">2025-12-26: HD_4875,  0.452 -  0.458</a></li>
+<li><a href="figs/Benson,_AZ_2025-12-26_HD_22064.png" target="_blank">2025-12-26: HD_22064,  0.016 -  0.047</a></li>
+<li><a href="figs/Benson,_AZ_2025-12-26_EPIC_212822491.png" target="_blank">2025-12-26: EPIC_212822491,  0.006 -  0.011</a></li>
+<li><a href="figs/Benson,_AZ_2025-12-30_CD-27_2812.png" target="_blank">2025-12-30: CD-27_2812,  0.006 -  0.009</a></li>
+<li><a href="figs/Benson,_AZ_2025-12-31_HD_287990.png" target="_blank">2025-12-31: HD_287990, -0.014 -  0.009</a></li>
+<li><a href="figs/Benson,_AZ_2026-01-02_EPIC_212822491.png" target="_blank">2026-01-02: EPIC_212822491,  0.493 -  0.500</a></li>
+<li><a href="figs/Benson,_AZ_2026-01-04_HD_22064.png" target="_blank">2026-01-04: HD_22064,  0.002 -  0.030</a></li>
+<li><a href="figs/Benson,_AZ_2026-01-04_HD_287990.png" target="_blank">2026-01-04: HD_287990,  0.294 -  0.317</a></li>
+<li><a href="figs/Benson,_AZ_2026-01-06_BD-08_1175.png" target="_blank">2026-01-06: BD-08_1175, -0.018 - -0.003</a></li>
+<li><a href="figs/Benson,_AZ_2026-01-07_TYC_4196-1980-1.png" target="_blank">2026-01-07: TYC_4196-1980-1, -0.009 - -0.004</a></li>
+<li><a href="figs/Benson,_AZ_2026-01-08_HD_22064.png" target="_blank">2026-01-08: HD_22064,  0.440 -  0.466</a></li>
+<li><a href="figs/Benson,_AZ_2026-01-11_CD-27_2812.png" target="_blank">2026-01-11: CD-27_2812,  0.533 -  0.536</a></li>
+<li><a href="figs/Benson,_AZ_2026-01-13_HD_22064.png" target="_blank">2026-01-13: HD_22064, -0.013 -  0.012</a></li>
+<li><a href="figs/Benson,_AZ_2026-01-13_HD_287990.png" target="_blank">2026-01-13: HD_287990, -0.012 -  0.011</a></li>
+<li><a href="figs/Benson,_AZ_2026-01-13_BD-08_1175.png" target="_blank">2026-01-13: BD-08_1175,  0.376 -  0.391</a></li>
+<li><a href="figs/Benson,_AZ_2026-01-16_HD_4875.png" target="_blank">2026-01-16: HD_4875, -0.007 - -0.004</a></li>
+<li><a href="figs/Benson,_AZ_2026-01-17_HD_22064.png" target="_blank">2026-01-17: HD_22064,  0.426 -  0.449</a></li>
+<li><a href="figs/Benson,_AZ_2026-01-17_HD_287990.png" target="_blank">2026-01-17: HD_287990,  0.296 -  0.319</a></li>
+<li><a href="figs/Benson,_AZ_2026-01-22_HD_22064.png" target="_blank">2026-01-22: HD_22064, -0.027 - -0.005</a></li>
+<li><a href="figs/Benson,_AZ_2026-01-24_BD-08_1175.png" target="_blank">2026-01-24: BD-08_1175, -0.004 -  0.010</a></li>
+<li><a href="figs/Benson,_AZ_2026-01-26_HD_287990.png" target="_blank">2026-01-26: HD_287990, -0.008 -  0.013</a></li>
+<li><a href="figs/Benson,_AZ_2026-01-31_BD-08_1175.png" target="_blank">2026-01-31: BD-08_1175,  0.392 -  0.405</a></li>
+<li><a href="figs/Benson,_AZ_2026-01-31_TYC_2645-1130-1.png" target="_blank">2026-01-31: TYC_2645-1130-1,  0.746 -  0.748</a></li>
+<li><a href="figs/Benson,_AZ_2026-02-01_TYC_3119-2275-1.png" target="_blank">2026-02-01: TYC_3119-2275-1,  0.517 -  0.521</a></li>
+<li><a href="figs/Benson,_AZ_2026-02-05_TYC_2645-1130-1.png" target="_blank">2026-02-05: TYC_2645-1130-1,  0.006 -  0.008</a></li>
+<li><a href="figs/Benson,_AZ_2026-02-05_TYC_3119-2275-1.png" target="_blank">2026-02-05: TYC_3119-2275-1, -0.014 - -0.009</a></li>
+<li><a href="figs/Benson,_AZ_2026-02-08_HD_287990.png" target="_blank">2026-02-08: HD_287990, -0.002 -  0.015</a></li>
+<li><a href="figs/Benson,_AZ_2026-02-14_EPIC_212822491.png" target="_blank">2026-02-14: EPIC_212822491,  0.488 -  0.503</a></li>
+<li><a href="figs/Benson,_AZ_2026-02-15_CD-27_2812.png" target="_blank">2026-02-15: CD-27_2812, -0.012 - -0.009</a></li>
+<li><a href="figs/Benson,_AZ_2026-02-15_TYC_4196-1980-1.png" target="_blank">2026-02-15: TYC_4196-1980-1, -0.012 - -0.002</a></li>
+<li><a href="figs/Benson,_AZ_2026-02-18_TYC_3119-2275-1.png" target="_blank">2026-02-18: TYC_3119-2275-1,  0.508 -  0.516</a></li>
+<li><a href="figs/Benson,_AZ_2026-02-21_HD_287990.png" target="_blank">2026-02-21: HD_287990,  0.003 -  0.017</a></li>
+<li><a href="figs/Benson,_AZ_2026-02-22_TYC_3119-2275-1.png" target="_blank">2026-02-22: TYC_3119-2275-1, -0.024 - -0.014</a></li>
+<li><a href="figs/Benson,_AZ_2026-02-23_CD-27_2812.png" target="_blank">2026-02-23: CD-27_2812,  0.006 -  0.009</a></li>
+<li><a href="figs/Benson,_AZ_2026-02-24_TYC_2645-1130-1.png" target="_blank">2026-02-24: TYC_2645-1130-1, -0.009 - -0.004</a></li>
+<li><a href="figs/Benson,_AZ_2026-02-27_TYC_4196-1980-1.png" target="_blank">2026-02-27: TYC_4196-1980-1,  0.602 -  0.614</a></li>
+<li><a href="figs/Benson,_AZ_2026-03-06_HD_287990.png" target="_blank">2026-03-06: HD_287990,  0.008 -  0.019</a></li>
+<li><a href="figs/Benson,_AZ_2026-03-07_CD-27_2812.png" target="_blank">2026-03-07: CD-27_2812,  0.533 -  0.536</a></li>
+<li><a href="figs/Benson,_AZ_2026-03-07_TYC_4196-1980-1.png" target="_blank">2026-03-07: TYC_4196-1980-1,  0.012 -  0.024</a></li>
+<li><a href="figs/Benson,_AZ_2026-03-09_HD_22064.png" target="_blank">2026-03-09: HD_22064,  0.011 -  0.016</a></li>
+<li><a href="figs/Benson,_AZ_2026-03-11_TYC_3119-2275-1.png" target="_blank">2026-03-11: TYC_3119-2275-1, -0.033 - -0.019</a></li>
+<li><a href="figs/Benson,_AZ_2026-03-18_BD-08_1175.png" target="_blank">2026-03-18: BD-08_1175, -0.009 - -0.004</a></li>
+<li><a href="figs/Benson,_AZ_2026-03-20_TYC_3119-2275-1.png" target="_blank">2026-03-20: TYC_3119-2275-1,  0.021 -  0.036</a></li>
+<li><a href="figs/Benson,_AZ_2026-03-22_EPIC_212822491.png" target="_blank">2026-03-22: EPIC_212822491, -0.005 -  0.015</a></li>
+<li><a href="figs/Benson,_AZ_2026-03-25_BD-08_1175.png" target="_blank">2026-03-25: BD-08_1175,  0.387 -  0.390</a></li>
+<li><a href="figs/Benson,_AZ_2026-03-26_TYC_4196-1980-1.png" target="_blank">2026-03-26: TYC_4196-1980-1, -0.016 - -0.002</a></li>
+<li><a href="figs/Benson,_AZ_2026-03-29_EPIC_212822491.png" target="_blank">2026-03-29: EPIC_212822491,  0.483 -  0.502</a></li>
+</ul>
+<a id="Keele, UK"><h3>Keele, UK</h3></a>
+<ul>
+<li><a href="figs/Keele,_UK_2025-11-02_TYC_4196-1980-1.png" target="_blank">2025-11-02: TYC_4196-1980-1,  0.566 -  0.592</a></li>
+<li><a href="figs/Keele,_UK_2025-11-04_TYC_3119-2275-1.png" target="_blank">2025-11-04: TYC_3119-2275-1, -0.025 - -0.005</a></li>
+<li><a href="figs/Keele,_UK_2025-11-10_HD_22064.png" target="_blank">2025-11-10: HD_22064, -0.034 - -0.013</a></li>
+<li><a href="figs/Keele,_UK_2025-11-10_TYC_4196-1980-1.png" target="_blank">2025-11-10: TYC_4196-1980-1, -0.023 -  0.003</a></li>
+<li><a href="figs/Keele,_UK_2025-11-13_HD_287990.png" target="_blank">2025-11-13: HD_287990,  0.266 -  0.282</a></li>
+<li><a href="figs/Keele,_UK_2025-11-17_TYC_3119-2275-1.png" target="_blank">2025-11-17: TYC_3119-2275-1,  0.500 -  0.518</a></li>
+<li><a href="figs/Keele,_UK_2025-11-21_TYC_3119-2275-1.png" target="_blank">2025-11-21: TYC_3119-2275-1, -0.031 - -0.014</a></li>
+<li><a href="figs/Keele,_UK_2025-11-22_TYC_4196-1980-1.png" target="_blank">2025-11-22: TYC_4196-1980-1,  0.592 -  0.620</a></li>
+<li><a href="figs/Keele,_UK_2025-11-26_HD_287990.png" target="_blank">2025-11-26: HD_287990,  0.269 -  0.284</a></li>
+<li><a href="figs/Keele,_UK_2025-11-30_TYC_4196-1980-1.png" target="_blank">2025-11-30: TYC_4196-1980-1,  0.003 -  0.031</a></li>
+<li><a href="figs/Keele,_UK_2025-12-05_TYC_2645-1130-1.png" target="_blank">2025-12-05: TYC_2645-1130-1,  0.741 -  0.745</a></li>
+<li><a href="figs/Keele,_UK_2025-12-09_HD_287990.png" target="_blank">2025-12-09: HD_287990,  0.271 -  0.286</a></li>
+<li><a href="figs/Keele,_UK_2025-12-10_TYC_2645-1130-1.png" target="_blank">2025-12-10: TYC_2645-1130-1,  0.001 -  0.005</a></li>
+<li><a href="figs/Keele,_UK_2025-12-11_TYC_4196-1980-1.png" target="_blank">2025-12-11: TYC_4196-1980-1,  0.567 -  0.596</a></li>
+<li><a href="figs/Keele,_UK_2025-12-17_HD_22064.png" target="_blank">2025-12-17: HD_22064,  0.005 -  0.026</a></li>
+<li><a href="figs/Keele,_UK_2025-12-19_TYC_4196-1980-1.png" target="_blank">2025-12-19: TYC_4196-1980-1, -0.022 -  0.007</a></li>
+<li><a href="figs/Keele,_UK_2025-12-21_HD_22064.png" target="_blank">2025-12-21: HD_22064,  0.442 -  0.463</a></li>
+<li><a href="figs/Keele,_UK_2025-12-22_HD_287990.png" target="_blank">2025-12-22: HD_287990,  0.273 -  0.288</a></li>
+<li><a href="figs/Keele,_UK_2025-12-26_HD_22064.png" target="_blank">2025-12-26: HD_22064, -0.012 -  0.009</a></li>
+<li><a href="figs/Keele,_UK_2025-12-31_TYC_4196-1980-1.png" target="_blank">2025-12-31: TYC_4196-1980-1,  0.594 -  0.623</a></li>
+<li><a href="figs/Keele,_UK_2026-01-04_HD_22064.png" target="_blank">2026-01-04: HD_22064, -0.030 - -0.009</a></li>
+<li><a href="figs/Keele,_UK_2026-01-04_HD_287990.png" target="_blank">2026-01-04: HD_287990,  0.275 -  0.290</a></li>
+<li><a href="figs/Keele,_UK_2026-01-08_TYC_4196-1980-1.png" target="_blank">2026-01-08: TYC_4196-1980-1,  0.005 -  0.034</a></li>
+<li><a href="figs/Keele,_UK_2026-01-11_TYC_3119-2275-1.png" target="_blank">2026-01-11: TYC_3119-2275-1,  0.018 -  0.024</a></li>
+<li><a href="figs/Keele,_UK_2026-01-12_TYC_2645-1130-1.png" target="_blank">2026-01-12: TYC_2645-1130-1,  0.744 -  0.746</a></li>
+<li><a href="figs/Keele,_UK_2026-01-17_HD_287990.png" target="_blank">2026-01-17: HD_287990,  0.277 -  0.292</a></li>
+<li><a href="figs/Keele,_UK_2026-01-17_TYC_2645-1130-1.png" target="_blank">2026-01-17: TYC_2645-1130-1,  0.003 -  0.006</a></li>
+<li><a href="figs/Keele,_UK_2026-01-19_TYC_4196-1980-1.png" target="_blank">2026-01-19: TYC_4196-1980-1,  0.571 -  0.598</a></li>
+<li><a href="figs/Keele,_UK_2026-01-27_TYC_4196-1980-1.png" target="_blank">2026-01-27: TYC_4196-1980-1, -0.018 -  0.009</a></li>
+<li><a href="figs/Keele,_UK_2026-01-28_TYC_3119-2275-1.png" target="_blank">2026-01-28: TYC_3119-2275-1,  0.009 -  0.019</a></li>
+<li><a href="figs/Keele,_UK_2026-01-31_EPIC_212822491.png" target="_blank">2026-01-31: EPIC_212822491,  0.498 -  0.505</a></li>
+<li><a href="figs/Keele,_UK_2026-02-12_HD_287990.png" target="_blank">2026-02-12: HD_287990,  0.283 -  0.296</a></li>
+<li><a href="figs/Keele,_UK_2026-02-14_TYC_3119-2275-1.png" target="_blank">2026-02-14: TYC_3119-2275-1, -0.000 -  0.013</a></li>
+<li><a href="figs/Keele,_UK_2026-02-19_HD_22064.png" target="_blank">2026-02-19: HD_22064,  0.006 -  0.013</a></li>
+<li><a href="figs/Keele,_UK_2026-02-21_HD_287990.png" target="_blank">2026-02-21: HD_287990, -0.021 - -0.010</a></li>
+<li><a href="figs/Keele,_UK_2026-02-27_TYC_4196-1980-1.png" target="_blank">2026-02-27: TYC_4196-1980-1,  0.577 -  0.598</a></li>
+<li><a href="figs/Keele,_UK_2026-02-27_TYC_3119-2275-1.png" target="_blank">2026-02-27: TYC_3119-2275-1,  0.522 -  0.537</a></li>
+<li><a href="figs/Keele,_UK_2026-03-03_TYC_3119-2275-1.png" target="_blank">2026-03-03: TYC_3119-2275-1, -0.009 -  0.006</a></li>
+<li><a href="figs/Keele,_UK_2026-03-06_HD_287990.png" target="_blank">2026-03-06: HD_287990, -0.015 - -0.008</a></li>
+<li><a href="figs/Keele,_UK_2026-03-07_TYC_4196-1980-1.png" target="_blank">2026-03-07: TYC_4196-1980-1, -0.014 -  0.008</a></li>
+<li><a href="figs/Keele,_UK_2026-03-10_HD_287990.png" target="_blank">2026-03-10: HD_287990,  0.295 -  0.300</a></li>
+<li><a href="figs/Keele,_UK_2026-03-15_EPIC_212822491.png" target="_blank">2026-03-15: EPIC_212822491,  0.493 -  0.500</a></li>
+<li><a href="figs/Keele,_UK_2026-03-16_TYC_3119-2275-1.png" target="_blank">2026-03-16: TYC_3119-2275-1,  0.513 -  0.530</a></li>
+<li><a href="figs/Keele,_UK_2026-03-19_HD_287990.png" target="_blank">2026-03-19: HD_287990, -0.009 - -0.006</a></li>
+<li><a href="figs/Keele,_UK_2026-03-20_TYC_3119-2275-1.png" target="_blank">2026-03-20: TYC_3119-2275-1, -0.018 - -0.001</a></li>
+<li><a href="figs/Keele,_UK_2026-03-29_TYC_2645-1130-1.png" target="_blank">2026-03-29: TYC_2645-1130-1,  0.737 -  0.745</a></li>
+</ul>
+<a id="Pyskowice"><h3>Pyskowice</h3></a>
+<ul>
+<li><a href="figs/Pyskowice_2025-11-03_TYC_3119-2275-1.png" target="_blank">2025-11-03: TYC_3119-2275-1, -0.032 - -0.012</a></li>
+<li><a href="figs/Pyskowice_2025-11-09_HD_22064.png" target="_blank">2025-11-09: HD_22064, -0.042 - -0.018</a></li>
+<li><a href="figs/Pyskowice_2025-11-09_TYC_4196-1980-1.png" target="_blank">2025-11-09: TYC_4196-1980-1, -0.026 -  0.000</a></li>
+<li><a href="figs/Pyskowice_2025-11-20_BD-08_1175.png" target="_blank">2025-11-20: BD-08_1175,  0.376 -  0.380</a></li>
+<li><a href="figs/Pyskowice_2025-11-20_TYC_3119-2275-1.png" target="_blank">2025-11-20: TYC_3119-2275-1, -0.037 - -0.021</a></li>
+<li><a href="figs/Pyskowice_2025-11-21_TYC_4196-1980-1.png" target="_blank">2025-11-21: TYC_4196-1980-1,  0.589 -  0.617</a></li>
+<li><a href="figs/Pyskowice_2025-11-29_TYC_4196-1980-1.png" target="_blank">2025-11-29: TYC_4196-1980-1, -0.000 -  0.028</a></li>
+<li><a href="figs/Pyskowice_2025-12-01_BD-08_1175.png" target="_blank">2025-12-01: BD-08_1175, -0.004 - -0.001</a></li>
+<li><a href="figs/Pyskowice_2025-12-04_TYC_2645-1130-1.png" target="_blank">2025-12-04: TYC_2645-1130-1,  0.738 -  0.742</a></li>
+<li><a href="figs/Pyskowice_2025-12-07_HD_22064.png" target="_blank">2025-12-07: HD_22064,  0.015 -  0.039</a></li>
+<li><a href="figs/Pyskowice_2025-12-08_HD_287990.png" target="_blank">2025-12-08: HD_287990,  0.265 -  0.283</a></li>
+<li><a href="figs/Pyskowice_2025-12-08_BD-08_1175.png" target="_blank">2025-12-08: BD-08_1175,  0.390 -  0.394</a></li>
+<li><a href="figs/Pyskowice_2025-12-09_TYC_2645-1130-1.png" target="_blank">2025-12-09: TYC_2645-1130-1, -0.002 -  0.001</a></li>
+<li><a href="figs/Pyskowice_2025-12-10_TYC_4196-1980-1.png" target="_blank">2025-12-10: TYC_4196-1980-1,  0.565 -  0.593</a></li>
+<li><a href="figs/Pyskowice_2025-12-16_HD_22064.png" target="_blank">2025-12-16: HD_22064, -0.002 -  0.021</a></li>
+<li><a href="figs/Pyskowice_2025-12-16_TYC_3119-2275-1.png" target="_blank">2025-12-16: TYC_3119-2275-1,  0.015 -  0.024</a></li>
+<li><a href="figs/Pyskowice_2025-12-18_TYC_4196-1980-1.png" target="_blank">2025-12-18: TYC_4196-1980-1, -0.025 -  0.004</a></li>
+<li><a href="figs/Pyskowice_2025-12-20_HD_22064.png" target="_blank">2025-12-20: HD_22064,  0.434 -  0.458</a></li>
+<li><a href="figs/Pyskowice_2025-12-21_HD_287990.png" target="_blank">2025-12-21: HD_287990,  0.267 -  0.285</a></li>
+<li><a href="figs/Pyskowice_2025-12-25_HD_22064.png" target="_blank">2025-12-25: HD_22064, -0.020 -  0.004</a></li>
+<li><a href="figs/Pyskowice_2025-12-30_TYC_4196-1980-1.png" target="_blank">2025-12-30: TYC_4196-1980-1,  0.592 -  0.620</a></li>
+<li><a href="figs/Pyskowice_2026-01-03_HD_22064.png" target="_blank">2026-01-03: HD_22064, -0.037 - -0.014</a></li>
+<li><a href="figs/Pyskowice_2026-01-03_HD_287990.png" target="_blank">2026-01-03: HD_287990,  0.269 -  0.287</a></li>
+<li><a href="figs/Pyskowice_2026-01-07_TYC_4196-1980-1.png" target="_blank">2026-01-07: TYC_4196-1980-1,  0.003 -  0.031</a></li>
+<li><a href="figs/Pyskowice_2026-01-10_TYC_3119-2275-1.png" target="_blank">2026-01-10: TYC_3119-2275-1,  0.012 -  0.016</a></li>
+<li><a href="figs/Pyskowice_2026-01-11_TYC_2645-1130-1.png" target="_blank">2026-01-11: TYC_2645-1130-1,  0.741 -  0.743</a></li>
+<li><a href="figs/Pyskowice_2026-01-16_HD_287990.png" target="_blank">2026-01-16: HD_287990,  0.271 -  0.289</a></li>
+<li><a href="figs/Pyskowice_2026-01-16_TYC_2645-1130-1.png" target="_blank">2026-01-16: TYC_2645-1130-1,  0.000 -  0.003</a></li>
+<li><a href="figs/Pyskowice_2026-01-18_TYC_4196-1980-1.png" target="_blank">2026-01-18: TYC_4196-1980-1,  0.568 -  0.595</a></li>
+<li><a href="figs/Pyskowice_2026-01-23_EPIC_212822491.png" target="_blank">2026-01-23: EPIC_212822491,  0.005 -  0.013</a></li>
+<li><a href="figs/Pyskowice_2026-01-26_TYC_4196-1980-1.png" target="_blank">2026-01-26: TYC_4196-1980-1, -0.011 -  0.006</a></li>
+<li><a href="figs/Pyskowice_2026-01-27_TYC_3119-2275-1.png" target="_blank">2026-01-27: TYC_3119-2275-1,  0.003 -  0.011</a></li>
+<li><a href="figs/Pyskowice_2026-01-30_BD-08_1175.png" target="_blank">2026-01-30: BD-08_1175,  0.376 -  0.379</a></li>
+<li><a href="figs/Pyskowice_2026-01-30_EPIC_212822491.png" target="_blank">2026-01-30: EPIC_212822491,  0.493 -  0.502</a></li>
+<li><a href="figs/Pyskowice_2026-02-07_TYC_4196-1980-1.png" target="_blank">2026-02-07: TYC_4196-1980-1,  0.604 -  0.621</a></li>
+<li><a href="figs/Pyskowice_2026-02-09_HD_22064.png" target="_blank">2026-02-09: HD_22064,  0.014 -  0.025</a></li>
+<li><a href="figs/Pyskowice_2026-02-09_TYC_3119-2275-1.png" target="_blank">2026-02-09: TYC_3119-2275-1,  0.525 -  0.537</a></li>
+<li><a href="figs/Pyskowice_2026-02-10_BD-08_1175.png" target="_blank">2026-02-10: BD-08_1175, -0.005 - -0.001</a></li>
+<li><a href="figs/Pyskowice_2026-02-11_HD_287990.png" target="_blank">2026-02-11: HD_287990,  0.279 -  0.293</a></li>
+<li><a href="figs/Pyskowice_2026-02-13_TYC_3119-2275-1.png" target="_blank">2026-02-13: TYC_3119-2275-1, -0.006 -  0.006</a></li>
+<li><a href="figs/Pyskowice_2026-02-17_BD-08_1175.png" target="_blank">2026-02-17: BD-08_1175,  0.390 -  0.393</a></li>
+<li><a href="figs/Pyskowice_2026-02-18_HD_22064.png" target="_blank">2026-02-18: HD_22064, -0.000 -  0.008</a></li>
+<li><a href="figs/Pyskowice_2026-02-24_HD_287990.png" target="_blank">2026-02-24: HD_287990,  0.284 -  0.288</a></li>
+<li><a href="figs/Pyskowice_2026-02-26_TYC_4196-1980-1.png" target="_blank">2026-02-26: TYC_4196-1980-1,  0.576 -  0.595</a></li>
+<li><a href="figs/Pyskowice_2026-02-26_TYC_3119-2275-1.png" target="_blank">2026-02-26: TYC_3119-2275-1,  0.516 -  0.531</a></li>
+<li><a href="figs/Pyskowice_2026-02-27_HD_22064.png" target="_blank">2026-02-27: HD_22064, -0.014 - -0.010</a></li>
+<li><a href="figs/Pyskowice_2026-03-02_TYC_3119-2275-1.png" target="_blank">2026-03-02: TYC_3119-2275-1, -0.015 - -0.000</a></li>
+<li><a href="figs/Pyskowice_2026-03-06_TYC_4196-1980-1.png" target="_blank">2026-03-06: TYC_4196-1980-1, -0.014 -  0.005</a></li>
+<li><a href="figs/Pyskowice_2026-03-09_HD_287990.png" target="_blank">2026-03-09: HD_287990,  0.290 -  0.297</a></li>
+<li><a href="figs/Pyskowice_2026-03-10_TYC_2645-1130-1.png" target="_blank">2026-03-10: TYC_2645-1130-1,  0.749 -  0.756</a></li>
+<li><a href="figs/Pyskowice_2026-03-14_EPIC_212822491.png" target="_blank">2026-03-14: EPIC_212822491,  0.487 -  0.498</a></li>
+<li><a href="figs/Pyskowice_2026-03-15_TYC_3119-2275-1.png" target="_blank">2026-03-15: TYC_3119-2275-1,  0.507 -  0.524</a></li>
+<li><a href="figs/Pyskowice_2026-03-18_HD_287990.png" target="_blank">2026-03-18: HD_287990, -0.013 - -0.010</a></li>
+<li><a href="figs/Pyskowice_2026-03-18_TYC_4196-1980-1.png" target="_blank">2026-03-18: TYC_4196-1980-1,  0.600 -  0.620</a></li>
+<li><a href="figs/Pyskowice_2026-03-19_TYC_3119-2275-1.png" target="_blank">2026-03-19: TYC_3119-2275-1, -0.024 - -0.007</a></li>
+<li><a href="figs/Pyskowice_2026-03-22_HD_287990.png" target="_blank">2026-03-22: HD_287990,  0.296 -  0.299</a></li>
+<li><a href="figs/Pyskowice_2026-03-29_TYC_2645-1130-1.png" target="_blank">2026-03-29: TYC_2645-1130-1,  0.734 -  0.743</a></li>
+</ul>
+<a id="Tonantzintla"><h3>Tonantzintla</h3></a>
+<ul>
+<li><a href="figs/Tonantzintla_2025-11-03_BD-08_1175.png" target="_blank">2025-11-03: BD-08_1175,  0.374 -  0.388</a></li>
+<li><a href="figs/Tonantzintla_2025-11-04_CD-31_3271.png" target="_blank">2025-11-04: CD-31_3271, -0.020 -  0.009</a></li>
+<li><a href="figs/Tonantzintla_2025-11-04_TYC_3119-2275-1.png" target="_blank">2025-11-04: TYC_3119-2275-1,  0.009 -  0.019</a></li>
+<li><a href="figs/Tonantzintla_2025-11-05_CD-27_2812.png" target="_blank">2025-11-05: CD-27_2812, -0.011 -  0.014</a></li>
+<li><a href="figs/Tonantzintla_2025-11-09_HD_4875.png" target="_blank">2025-11-09: HD_4875,  0.004 -  0.024</a></li>
+<li><a href="figs/Tonantzintla_2025-11-09_HD_287990.png" target="_blank">2025-11-09: HD_287990, -0.026 - -0.004</a></li>
+<li><a href="figs/Tonantzintla_2025-11-10_HD_22064.png" target="_blank">2025-11-10: HD_22064, -0.012 -  0.023</a></li>
+<li><a href="figs/Tonantzintla_2025-11-13_HD_287990.png" target="_blank">2025-11-13: HD_287990,  0.282 -  0.305</a></li>
+<li><a href="figs/Tonantzintla_2025-11-13_CD-27_2812.png" target="_blank">2025-11-13: CD-27_2812,  0.008 -  0.035</a></li>
+<li><a href="figs/Tonantzintla_2025-11-14_HD_22064.png" target="_blank">2025-11-14: HD_22064,  0.425 -  0.460</a></li>
+<li><a href="figs/Tonantzintla_2025-11-14_BD-08_1175.png" target="_blank">2025-11-14: BD-08_1175, -0.007 -  0.009</a></li>
+<li><a href="figs/Tonantzintla_2025-11-15_HD_4875.png" target="_blank">2025-11-15: HD_4875,  0.444 -  0.463</a></li>
+<li><a href="figs/Tonantzintla_2025-11-17_CD-27_2812.png" target="_blank">2025-11-17: CD-27_2812,  0.517 -  0.544</a></li>
+<li><a href="figs/Tonantzintla_2025-11-18_CD-31_3271.png" target="_blank">2025-11-18: CD-31_3271,  0.465 -  0.497</a></li>
+<li><a href="figs/Tonantzintla_2025-11-19_HD_22064.png" target="_blank">2025-11-19: HD_22064, -0.029 -  0.006</a></li>
+<li><a href="figs/Tonantzintla_2025-11-21_BD-08_1175.png" target="_blank">2025-11-21: BD-08_1175,  0.388 -  0.405</a></li>
+<li><a href="figs/Tonantzintla_2025-11-21_CD-31_3271.png" target="_blank">2025-11-21: CD-31_3271, -0.003 -  0.029</a></li>
+<li><a href="figs/Tonantzintla_2025-11-21_TYC_3119-2275-1.png" target="_blank">2025-11-21: TYC_3119-2275-1,  0.005 -  0.010</a></li>
+<li><a href="figs/Tonantzintla_2025-11-22_HD_287990.png" target="_blank">2025-11-22: HD_287990, -0.024 -  0.001</a></li>
+<li><a href="figs/Tonantzintla_2025-11-23_HD_22064.png" target="_blank">2025-11-23: HD_22064,  0.407 -  0.442</a></li>
+<li><a href="figs/Tonantzintla_2025-11-25_CD-27_2812.png" target="_blank">2025-11-25: CD-27_2812,  0.535 -  0.562</a></li>
+<li><a href="figs/Tonantzintla_2025-11-26_HD_287990.png" target="_blank">2025-11-26: HD_287990,  0.284 -  0.309</a></li>
+<li><a href="figs/Tonantzintla_2025-11-28_HD_22064.png" target="_blank">2025-11-28: HD_22064, -0.047 - -0.012</a></li>
+<li><a href="figs/Tonantzintla_2025-12-05_CD-31_3271.png" target="_blank">2025-12-05: CD-31_3271,  0.481 -  0.514</a></li>
+<li><a href="figs/Tonantzintla_2025-12-06_HD_4875.png" target="_blank">2025-12-06: HD_4875, -0.016 - -0.002</a></li>
+<li><a href="figs/Tonantzintla_2025-12-08_CD-31_3271.png" target="_blank">2025-12-08: CD-31_3271,  0.013 -  0.046</a></li>
+<li><a href="figs/Tonantzintla_2025-12-09_HD_287990.png" target="_blank">2025-12-09: HD_287990,  0.287 -  0.312</a></li>
+<li><a href="figs/Tonantzintla_2025-12-18_HD_287990.png" target="_blank">2025-12-18: HD_287990, -0.020 -  0.005</a></li>
+<li><a href="figs/Tonantzintla_2025-12-19_CD-31_3271.png" target="_blank">2025-12-19: CD-31_3271, -0.035 - -0.002</a></li>
+<li><a href="figs/Tonantzintla_2025-12-22_HD_287990.png" target="_blank">2025-12-22: HD_287990,  0.289 -  0.314</a></li>
+<li><a href="figs/Tonantzintla_2025-12-22_CD-27_2812.png" target="_blank">2025-12-22: CD-27_2812, -0.029 - -0.001</a></li>
+<li><a href="figs/Tonantzintla_2025-12-22_CD-31_3271.png" target="_blank">2025-12-22: CD-31_3271,  0.498 -  0.530</a></li>
+<li><a href="figs/Tonantzintla_2025-12-26_HD_4875.png" target="_blank">2025-12-26: HD_4875,  0.451 -  0.461</a></li>
+<li><a href="figs/Tonantzintla_2025-12-26_HD_22064.png" target="_blank">2025-12-26: HD_22064,  0.014 -  0.045</a></li>
+<li><a href="figs/Tonantzintla_2025-12-26_EPIC_212822491.png" target="_blank">2025-12-26: EPIC_212822491,  0.002 -  0.008</a></li>
+<li><a href="figs/Tonantzintla_2025-12-30_CD-27_2812.png" target="_blank">2025-12-30: CD-27_2812, -0.010 -  0.017</a></li>
+<li><a href="figs/Tonantzintla_2025-12-31_HD_287990.png" target="_blank">2025-12-31: HD_287990, -0.018 -  0.007</a></li>
+<li><a href="figs/Tonantzintla_2026-01-02_EPIC_212822491.png" target="_blank">2026-01-02: EPIC_212822491,  0.490 -  0.497</a></li>
+<li><a href="figs/Tonantzintla_2026-01-03_CD-27_2812.png" target="_blank">2026-01-03: CD-27_2812,  0.499 -  0.526</a></li>
+<li><a href="figs/Tonantzintla_2026-01-04_HD_22064.png" target="_blank">2026-01-04: HD_22064, -0.000 -  0.027</a></li>
+<li><a href="figs/Tonantzintla_2026-01-04_HD_287990.png" target="_blank">2026-01-04: HD_287990,  0.291 -  0.316</a></li>
+<li><a href="figs/Tonantzintla_2026-01-05_CD-31_3271.png" target="_blank">2026-01-05: CD-31_3271, -0.018 -  0.014</a></li>
+<li><a href="figs/Tonantzintla_2026-01-06_BD-08_1175.png" target="_blank">2026-01-06: BD-08_1175, -0.021 - -0.004</a></li>
+<li><a href="figs/Tonantzintla_2026-01-07_CD-27_2812.png" target="_blank">2026-01-07: CD-27_2812,  0.008 -  0.035</a></li>
+<li><a href="figs/Tonantzintla_2026-01-08_HD_22064.png" target="_blank">2026-01-08: HD_22064,  0.438 -  0.464</a></li>
+<li><a href="figs/Tonantzintla_2026-01-11_CD-27_2812.png" target="_blank">2026-01-11: CD-27_2812,  0.517 -  0.544</a></li>
+<li><a href="figs/Tonantzintla_2026-01-13_HD_22064.png" target="_blank">2026-01-13: HD_22064, -0.015 -  0.010</a></li>
+<li><a href="figs/Tonantzintla_2026-01-13_HD_287990.png" target="_blank">2026-01-13: HD_287990, -0.014 -  0.009</a></li>
+<li><a href="figs/Tonantzintla_2026-01-13_BD-08_1175.png" target="_blank">2026-01-13: BD-08_1175,  0.373 -  0.390</a></li>
+<li><a href="figs/Tonantzintla_2026-01-16_HD_4875.png" target="_blank">2026-01-16: HD_4875, -0.009 - -0.003</a></li>
+<li><a href="figs/Tonantzintla_2026-01-17_HD_22064.png" target="_blank">2026-01-17: HD_22064,  0.423 -  0.447</a></li>
+<li><a href="figs/Tonantzintla_2026-01-17_HD_287990.png" target="_blank">2026-01-17: HD_287990,  0.295 -  0.318</a></li>
+<li><a href="figs/Tonantzintla_2026-01-19_CD-27_2812.png" target="_blank">2026-01-19: CD-27_2812,  0.535 -  0.562</a></li>
+<li><a href="figs/Tonantzintla_2026-01-19_CD-31_3271.png" target="_blank">2026-01-19: CD-31_3271,  0.466 -  0.498</a></li>
+<li><a href="figs/Tonantzintla_2026-01-22_HD_22064.png" target="_blank">2026-01-22: HD_22064, -0.029 - -0.008</a></li>
+<li><a href="figs/Tonantzintla_2026-01-22_CD-31_3271.png" target="_blank">2026-01-22: CD-31_3271, -0.002 -  0.031</a></li>
+<li><a href="figs/Tonantzintla_2026-01-24_BD-08_1175.png" target="_blank">2026-01-24: BD-08_1175, -0.005 -  0.010</a></li>
+<li><a href="figs/Tonantzintla_2026-01-26_HD_287990.png" target="_blank">2026-01-26: HD_287990, -0.009 -  0.011</a></li>
+<li><a href="figs/Tonantzintla_2026-01-31_BD-08_1175.png" target="_blank">2026-01-31: BD-08_1175,  0.390 -  0.404</a></li>
+<li><a href="figs/Tonantzintla_2026-02-05_CD-31_3271.png" target="_blank">2026-02-05: CD-31_3271,  0.482 -  0.515</a></li>
+<li><a href="figs/Tonantzintla_2026-02-05_TYC_2645-1130-1.png" target="_blank">2026-02-05: TYC_2645-1130-1,  0.005 -  0.006</a></li>
+<li><a href="figs/Tonantzintla_2026-02-08_HD_287990.png" target="_blank">2026-02-08: HD_287990, -0.004 -  0.013</a></li>
+<li><a href="figs/Tonantzintla_2026-02-14_EPIC_212822491.png" target="_blank">2026-02-14: EPIC_212822491,  0.485 -  0.500</a></li>
+<li><a href="figs/Tonantzintla_2026-02-15_CD-27_2812.png" target="_blank">2026-02-15: CD-27_2812, -0.024 - -0.002</a></li>
+<li><a href="figs/Tonantzintla_2026-02-15_TYC_4196-1980-1.png" target="_blank">2026-02-15: TYC_4196-1980-1, -0.010 - -0.004</a></li>
+<li><a href="figs/Tonantzintla_2026-02-19_CD-31_3271.png" target="_blank">2026-02-19: CD-31_3271, -0.030 - -0.001</a></li>
+<li><a href="figs/Tonantzintla_2026-02-21_HD_287990.png" target="_blank">2026-02-21: HD_287990,  0.001 -  0.015</a></li>
+<li><a href="figs/Tonantzintla_2026-02-22_CD-31_3271.png" target="_blank">2026-02-22: CD-31_3271,  0.504 -  0.531</a></li>
+<li><a href="figs/Tonantzintla_2026-02-22_TYC_3119-2275-1.png" target="_blank">2026-02-22: TYC_3119-2275-1, -0.025 - -0.019</a></li>
+<li><a href="figs/Tonantzintla_2026-02-23_CD-27_2812.png" target="_blank">2026-02-23: CD-27_2812, -0.003 -  0.017</a></li>
+<li><a href="figs/Tonantzintla_2026-02-27_CD-27_2812.png" target="_blank">2026-02-27: CD-27_2812,  0.507 -  0.526</a></li>
+<li><a href="figs/Tonantzintla_2026-03-06_HD_287990.png" target="_blank">2026-03-06: HD_287990,  0.006 -  0.017</a></li>
+<li><a href="figs/Tonantzintla_2026-03-07_CD-27_2812.png" target="_blank">2026-03-07: CD-27_2812,  0.528 -  0.544</a></li>
+<li><a href="figs/Tonantzintla_2026-03-08_CD-31_3271.png" target="_blank">2026-03-08: CD-31_3271, -0.005 -  0.015</a></li>
+<li><a href="figs/Tonantzintla_2026-03-09_HD_22064.png" target="_blank">2026-03-09: HD_22064,  0.007 -  0.014</a></li>
+<li><a href="figs/Tonantzintla_2026-03-13_HD_22064.png" target="_blank">2026-03-13: HD_22064,  0.445 -  0.450</a></li>
+<li><a href="figs/Tonantzintla_2026-03-15_EPIC_212822491.png" target="_blank">2026-03-15: EPIC_212822491,  0.504 -  0.524</a></li>
+<li><a href="figs/Tonantzintla_2026-03-18_HD_22064.png" target="_blank">2026-03-18: HD_22064, -0.007 - -0.004</a></li>
+<li><a href="figs/Tonantzintla_2026-03-18_BD-08_1175.png" target="_blank">2026-03-18: BD-08_1175, -0.011 - -0.005</a></li>
+<li><a href="figs/Tonantzintla_2026-03-20_TYC_3119-2275-1.png" target="_blank">2026-03-20: TYC_3119-2275-1,  0.020 -  0.033</a></li>
+<li><a href="figs/Tonantzintla_2026-03-22_CD-31_3271.png" target="_blank">2026-03-22: CD-31_3271,  0.486 -  0.499</a></li>
+<li><a href="figs/Tonantzintla_2026-03-22_EPIC_212822491.png" target="_blank">2026-03-22: EPIC_212822491, -0.008 -  0.013</a></li>
+<li><a href="figs/Tonantzintla_2026-03-25_BD-08_1175.png" target="_blank">2026-03-25: BD-08_1175,  0.385 -  0.389</a></li>
+<li><a href="figs/Tonantzintla_2026-03-26_TYC_4196-1980-1.png" target="_blank">2026-03-26: TYC_4196-1980-1, -0.013 - -0.003</a></li>
+<li><a href="figs/Tonantzintla_2026-03-29_EPIC_212822491.png" target="_blank">2026-03-29: EPIC_212822491,  0.479 -  0.501</a></li>
+</ul>
+<a id="Otivar"><h3>Otivar</h3></a>
+<ul>
+<li><a href="figs/Otivar_2025-11-03_TYC_3119-2275-1.png" target="_blank">2025-11-03: TYC_3119-2275-1, -0.023 - -0.008</a></li>
+<li><a href="figs/Otivar_2025-11-08_HD_4875.png" target="_blank">2025-11-08: HD_4875, -0.010 - -0.000</a></li>
+<li><a href="figs/Otivar_2025-11-09_HD_22064.png" target="_blank">2025-11-09: HD_22064, -0.039 - -0.007</a></li>
+<li><a href="figs/Otivar_2025-11-12_HD_287990.png" target="_blank">2025-11-12: HD_287990,  0.263 -  0.286</a></li>
+<li><a href="figs/Otivar_2025-11-13_BD-08_1175.png" target="_blank">2025-11-13: BD-08_1175, -0.019 - -0.007</a></li>
+<li><a href="figs/Otivar_2025-11-16_TYC_3119-2275-1.png" target="_blank">2025-11-16: TYC_3119-2275-1,  0.502 -  0.515</a></li>
+<li><a href="figs/Otivar_2025-11-20_BD-08_1175.png" target="_blank">2025-11-20: BD-08_1175,  0.375 -  0.388</a></li>
+<li><a href="figs/Otivar_2025-11-20_TYC_3119-2275-1.png" target="_blank">2025-11-20: TYC_3119-2275-1, -0.028 - -0.017</a></li>
+<li><a href="figs/Otivar_2025-11-21_TYC_4196-1980-1.png" target="_blank">2025-11-21: TYC_4196-1980-1,  0.593 -  0.596</a></li>
+<li><a href="figs/Otivar_2025-11-25_HD_287990.png" target="_blank">2025-11-25: HD_287990,  0.265 -  0.288</a></li>
+<li><a href="figs/Otivar_2025-11-29_TYC_4196-1980-1.png" target="_blank">2025-11-29: TYC_4196-1980-1,  0.004 -  0.030</a></li>
+<li><a href="figs/Otivar_2025-12-01_BD-08_1175.png" target="_blank">2025-12-01: BD-08_1175, -0.005 -  0.008</a></li>
+<li><a href="figs/Otivar_2025-12-04_TYC_2645-1130-1.png" target="_blank">2025-12-04: TYC_2645-1130-1,  0.742 -  0.744</a></li>
+<li><a href="figs/Otivar_2025-12-07_HD_22064.png" target="_blank">2025-12-07: HD_22064,  0.018 -  0.049</a></li>
+<li><a href="figs/Otivar_2025-12-08_HD_287990.png" target="_blank">2025-12-08: HD_287990,  0.268 -  0.290</a></li>
+<li><a href="figs/Otivar_2025-12-08_BD-08_1175.png" target="_blank">2025-12-08: BD-08_1175,  0.389 -  0.402</a></li>
+<li><a href="figs/Otivar_2025-12-09_TYC_2645-1130-1.png" target="_blank">2025-12-09: TYC_2645-1130-1,  0.002 -  0.004</a></li>
+<li><a href="figs/Otivar_2025-12-10_TYC_4196-1980-1.png" target="_blank">2025-12-10: TYC_4196-1980-1,  0.569 -  0.595</a></li>
+<li><a href="figs/Otivar_2025-12-16_HD_22064.png" target="_blank">2025-12-16: HD_22064,  0.001 -  0.032</a></li>
+<li><a href="figs/Otivar_2025-12-18_EPIC_212822491.png" target="_blank">2025-12-18: EPIC_212822491,  0.498 -  0.502</a></li>
+<li><a href="figs/Otivar_2025-12-18_TYC_4196-1980-1.png" target="_blank">2025-12-18: TYC_4196-1980-1,  0.002 -  0.006</a></li>
+<li><a href="figs/Otivar_2025-12-19_HD_4875.png" target="_blank">2025-12-19: HD_4875, -0.010 - -0.002</a></li>
+<li><a href="figs/Otivar_2025-12-20_HD_22064.png" target="_blank">2025-12-20: HD_22064,  0.437 -  0.468</a></li>
+<li><a href="figs/Otivar_2025-12-21_HD_287990.png" target="_blank">2025-12-21: HD_287990,  0.270 -  0.292</a></li>
+<li><a href="figs/Otivar_2025-12-25_HD_22064.png" target="_blank">2025-12-25: HD_22064, -0.017 -  0.014</a></li>
+<li><a href="figs/Otivar_2026-01-03_HD_22064.png" target="_blank">2026-01-03: HD_22064, -0.031 - -0.003</a></li>
+<li><a href="figs/Otivar_2026-01-03_HD_287990.png" target="_blank">2026-01-03: HD_287990,  0.272 -  0.294</a></li>
+<li><a href="figs/Otivar_2026-01-08_HD_4875.png" target="_blank">2026-01-08: HD_4875,  0.457 -  0.461</a></li>
+<li><a href="figs/Otivar_2026-01-16_HD_287990.png" target="_blank">2026-01-16: HD_287990,  0.274 -  0.296</a></li>
+<li><a href="figs/Otivar_2026-01-18_TYC_4196-1980-1.png" target="_blank">2026-01-18: TYC_4196-1980-1,  0.589 -  0.597</a></li>
+<li><a href="figs/Otivar_2026-01-23_EPIC_212822491.png" target="_blank">2026-01-23: EPIC_212822491,  0.006 -  0.016</a></li>
+<li><a href="figs/Otivar_2026-01-25_HD_287990.png" target="_blank">2026-01-25: HD_287990, -0.031 - -0.010</a></li>
+<li><a href="figs/Otivar_2026-01-26_TYC_4196-1980-1.png" target="_blank">2026-01-26: TYC_4196-1980-1, -0.002 -  0.008</a></li>
+<li><a href="figs/Otivar_2026-01-27_TYC_3119-2275-1.png" target="_blank">2026-01-27: TYC_3119-2275-1,  0.013 -  0.017</a></li>
+<li><a href="figs/Otivar_2026-01-30_BD-08_1175.png" target="_blank">2026-01-30: BD-08_1175,  0.375 -  0.387</a></li>
+<li><a href="figs/Otivar_2026-01-30_EPIC_212822491.png" target="_blank">2026-01-30: EPIC_212822491,  0.493 -  0.505</a></li>
+<li><a href="figs/Otivar_2026-02-07_HD_287990.png" target="_blank">2026-02-07: HD_287990, -0.025 - -0.008</a></li>
+<li><a href="figs/Otivar_2026-02-10_BD-08_1175.png" target="_blank">2026-02-10: BD-08_1175, -0.003 -  0.007</a></li>
+<li><a href="figs/Otivar_2026-02-11_HD_287990.png" target="_blank">2026-02-11: HD_287990,  0.284 -  0.300</a></li>
+<li><a href="figs/Otivar_2026-02-13_TYC_3119-2275-1.png" target="_blank">2026-02-13: TYC_3119-2275-1,  0.004 -  0.012</a></li>
+<li><a href="figs/Otivar_2026-02-18_HD_22064.png" target="_blank">2026-02-18: HD_22064,  0.007 -  0.018</a></li>
+<li><a href="figs/Otivar_2026-02-20_HD_287990.png" target="_blank">2026-02-20: HD_287990, -0.020 - -0.006</a></li>
+<li><a href="figs/Otivar_2026-02-26_TYC_4196-1980-1.png" target="_blank">2026-02-26: TYC_4196-1980-1,  0.585 -  0.598</a></li>
+<li><a href="figs/Otivar_2026-02-26_TYC_3119-2275-1.png" target="_blank">2026-02-26: TYC_3119-2275-1,  0.526 -  0.538</a></li>
+<li><a href="figs/Otivar_2026-02-27_HD_22064.png" target="_blank">2026-02-27: HD_22064, -0.007 -  0.001</a></li>
+<li><a href="figs/Otivar_2026-03-02_TYC_3119-2275-1.png" target="_blank">2026-03-02: TYC_3119-2275-1, -0.005 -  0.007</a></li>
+<li><a href="figs/Otivar_2026-03-05_HD_287990.png" target="_blank">2026-03-05: HD_287990, -0.015 - -0.004</a></li>
+<li><a href="figs/Otivar_2026-03-06_TYC_4196-1980-1.png" target="_blank">2026-03-06: TYC_4196-1980-1, -0.005 -  0.009</a></li>
+<li><a href="figs/Otivar_2026-03-08_HD_22064.png" target="_blank">2026-03-08: HD_22064, -0.021 - -0.017</a></li>
+<li><a href="figs/Otivar_2026-03-09_HD_287990.png" target="_blank">2026-03-09: HD_287990,  0.295 -  0.304</a></li>
+<li><a href="figs/Otivar_2026-03-14_EPIC_212822491.png" target="_blank">2026-03-14: EPIC_212822491,  0.488 -  0.506</a></li>
+<li><a href="figs/Otivar_2026-03-15_TYC_3119-2275-1.png" target="_blank">2026-03-15: TYC_3119-2275-1,  0.517 -  0.532</a></li>
+<li><a href="figs/Otivar_2026-03-18_HD_287990.png" target="_blank">2026-03-18: HD_287990, -0.009 - -0.002</a></li>
+<li><a href="figs/Otivar_2026-03-19_TYC_3119-2275-1.png" target="_blank">2026-03-19: TYC_3119-2275-1, -0.014 -  0.002</a></li>
+<li><a href="figs/Otivar_2026-03-21_EPIC_212822491.png" target="_blank">2026-03-21: EPIC_212822491, -0.025 - -0.007</a></li>
+<li><a href="figs/Otivar_2026-03-29_TYC_2645-1130-1.png" target="_blank">2026-03-29: TYC_2645-1130-1,  0.739 -  0.747</a></li>
+</ul>
+<a id="ROTUZ50"><h3>ROTUZ50</h3></a>
+<ul>
+<li><a href="figs/ROTUZ50_2025-11-03_BD-08_1175.png" target="_blank">2025-11-03: BD-08_1175,  0.368 -  0.381</a></li>
+<li><a href="figs/ROTUZ50_2025-11-05_CD-27_2812.png" target="_blank">2025-11-05: CD-27_2812, -0.031 - -0.002</a></li>
+<li><a href="figs/ROTUZ50_2025-11-07_CD-31_3271.png" target="_blank">2025-11-07: CD-31_3271,  0.480 -  0.521</a></li>
+<li><a href="figs/ROTUZ50_2025-11-09_HD_4875.png" target="_blank">2025-11-09: HD_4875,  0.002 -  0.022</a></li>
+<li><a href="figs/ROTUZ50_2025-11-09_TYC_8547-22-1.png" target="_blank">2025-11-09: TYC_8547-22-1, -0.011 -  0.048</a></li>
+<li><a href="figs/ROTUZ50_2025-11-10_HD_22064.png" target="_blank">2025-11-10: HD_22064, -0.019 -  0.014</a></li>
+<li><a href="figs/ROTUZ50_2025-11-10_CD-31_3271.png" target="_blank">2025-11-10: CD-31_3271,  0.013 -  0.054</a></li>
+<li><a href="figs/ROTUZ50_2025-11-11_TYC_8547-22-1.png" target="_blank">2025-11-11: TYC_8547-22-1,  0.459 -  0.519</a></li>
+<li><a href="figs/ROTUZ50_2025-11-13_HD_287990.png" target="_blank">2025-11-13: HD_287990,  0.277 -  0.295</a></li>
+<li><a href="figs/ROTUZ50_2025-11-13_CD-27_2812.png" target="_blank">2025-11-13: CD-27_2812, -0.013 -  0.018</a></li>
+<li><a href="figs/ROTUZ50_2025-11-13_TYC_8547-22-1.png" target="_blank">2025-11-13: TYC_8547-22-1, -0.071 - -0.010</a></li>
+<li><a href="figs/ROTUZ50_2025-11-14_HD_22064.png" target="_blank">2025-11-14: HD_22064,  0.417 -  0.450</a></li>
+<li><a href="figs/ROTUZ50_2025-11-14_BD-08_1175.png" target="_blank">2025-11-14: BD-08_1175, -0.012 -  0.002</a></li>
+<li><a href="figs/ROTUZ50_2025-11-15_HD_4875.png" target="_blank">2025-11-15: HD_4875,  0.442 -  0.461</a></li>
+<li><a href="figs/ROTUZ50_2025-11-17_CD-27_2812.png" target="_blank">2025-11-17: CD-27_2812,  0.496 -  0.529</a></li>
+<li><a href="figs/ROTUZ50_2025-11-19_HD_22064.png" target="_blank">2025-11-19: HD_22064, -0.037 - -0.004</a></li>
+<li><a href="figs/ROTUZ50_2025-11-21_BD-08_1175.png" target="_blank">2025-11-21: BD-08_1175,  0.382 -  0.397</a></li>
+<li><a href="figs/ROTUZ50_2025-11-21_CD-27_2812.png" target="_blank">2025-11-21: CD-27_2812,  0.005 -  0.039</a></li>
+<li><a href="figs/ROTUZ50_2025-11-21_CD-31_3271.png" target="_blank">2025-11-21: CD-31_3271, -0.036 -  0.011</a></li>
+<li><a href="figs/ROTUZ50_2025-11-24_CD-31_3271.png" target="_blank">2025-11-24: CD-31_3271,  0.497 -  0.544</a></li>
+<li><a href="figs/ROTUZ50_2025-11-24_TYC_8547-22-1.png" target="_blank">2025-11-24: TYC_8547-22-1,  0.515 -  0.583</a></li>
+<li><a href="figs/ROTUZ50_2025-11-25_CD-27_2812.png" target="_blank">2025-11-25: CD-27_2812,  0.514 -  0.549</a></li>
+<li><a href="figs/ROTUZ50_2025-11-26_HD_287990.png" target="_blank">2025-11-26: HD_287990,  0.280 -  0.300</a></li>
+<li><a href="figs/ROTUZ50_2025-11-26_TYC_8547-22-1.png" target="_blank">2025-11-26: TYC_8547-22-1, -0.015 -  0.054</a></li>
+<li><a href="figs/ROTUZ50_2025-11-28_TYC_8547-22-1.png" target="_blank">2025-11-28: TYC_8547-22-1,  0.456 -  0.525</a></li>
+<li><a href="figs/ROTUZ50_2025-11-30_TYC_8547-22-1.png" target="_blank">2025-11-30: TYC_8547-22-1, -0.074 - -0.003</a></li>
+<li><a href="figs/ROTUZ50_2025-12-02_BD-08_1175.png" target="_blank">2025-12-02: BD-08_1175,  0.002 -  0.018</a></li>
+<li><a href="figs/ROTUZ50_2025-12-03_CD-27_2812.png" target="_blank">2025-12-03: CD-27_2812,  0.533 -  0.570</a></li>
+<li><a href="figs/ROTUZ50_2025-12-05_CD-31_3271.png" target="_blank">2025-12-05: CD-31_3271,  0.449 -  0.501</a></li>
+<li><a href="figs/ROTUZ50_2025-12-06_HD_4875.png" target="_blank">2025-12-06: HD_4875, -0.017 - -0.004</a></li>
+<li><a href="figs/ROTUZ50_2025-12-08_CD-31_3271.png" target="_blank">2025-12-08: CD-31_3271, -0.019 -  0.035</a></li>
+<li><a href="figs/ROTUZ50_2025-12-09_HD_287990.png" target="_blank">2025-12-09: HD_287990,  0.282 -  0.304</a></li>
+<li><a href="figs/ROTUZ50_2025-12-13_TYC_8547-22-1.png" target="_blank">2025-12-13: TYC_8547-22-1, -0.016 -  0.062</a></li>
+<li><a href="figs/ROTUZ50_2025-12-15_TYC_8547-22-1.png" target="_blank">2025-12-15: TYC_8547-22-1,  0.456 -  0.533</a></li>
+<li><a href="figs/ROTUZ50_2025-12-17_TYC_8547-22-1.png" target="_blank">2025-12-17: TYC_8547-22-1, -0.072 -  0.005</a></li>
+<li><a href="figs/ROTUZ50_2025-12-18_HD_287990.png" target="_blank">2025-12-18: HD_287990, -0.025 - -0.002</a></li>
+<li><a href="figs/ROTUZ50_2025-12-19_CD-31_3271.png" target="_blank">2025-12-19: CD-31_3271, -0.066 - -0.007</a></li>
+<li><a href="figs/ROTUZ50_2025-12-22_HD_287990.png" target="_blank">2025-12-22: HD_287990,  0.284 -  0.307</a></li>
+<li><a href="figs/ROTUZ50_2025-12-22_CD-27_2812.png" target="_blank">2025-12-22: CD-27_2812, -0.047 - -0.005</a></li>
+<li><a href="figs/ROTUZ50_2025-12-22_CD-31_3271.png" target="_blank">2025-12-22: CD-31_3271,  0.468 -  0.526</a></li>
+<li><a href="figs/ROTUZ50_2025-12-25_CD-31_3271.png" target="_blank">2025-12-25: CD-31_3271,  0.002 -  0.060</a></li>
+<li><a href="figs/ROTUZ50_2025-12-26_HD_4875.png" target="_blank">2025-12-26: HD_4875,  0.450 -  0.459</a></li>
+<li><a href="figs/ROTUZ50_2025-12-26_HD_22064.png" target="_blank">2025-12-26: HD_22064,  0.014 -  0.035</a></li>
+<li><a href="figs/ROTUZ50_2025-12-30_CD-27_2812.png" target="_blank">2025-12-30: CD-27_2812, -0.025 -  0.017</a></li>
+<li><a href="figs/ROTUZ50_2025-12-30_TYC_8547-22-1.png" target="_blank">2025-12-30: TYC_8547-22-1, -0.007 -  0.071</a></li>
+<li><a href="figs/ROTUZ50_2025-12-31_HD_287990.png" target="_blank">2025-12-31: HD_287990, -0.020 -  0.000</a></li>
+<li><a href="figs/ROTUZ50_2026-01-01_TYC_8547-22-1.png" target="_blank">2026-01-01: TYC_8547-22-1,  0.465 -  0.543</a></li>
+<li><a href="figs/ROTUZ50_2026-01-03_TYC_8547-22-1.png" target="_blank">2026-01-03: TYC_8547-22-1, -0.064 -  0.014</a></li>
+<li><a href="figs/ROTUZ50_2026-01-04_HD_22064.png" target="_blank">2026-01-04: HD_22064, -0.001 -  0.018</a></li>
+<li><a href="figs/ROTUZ50_2026-01-04_HD_287990.png" target="_blank">2026-01-04: HD_287990,  0.289 -  0.309</a></li>
+<li><a href="figs/ROTUZ50_2026-01-05_CD-31_3271.png" target="_blank">2026-01-05: CD-31_3271, -0.040 -  0.019</a></li>
+<li><a href="figs/ROTUZ50_2026-01-07_CD-27_2812.png" target="_blank">2026-01-07: CD-27_2812, -0.004 -  0.036</a></li>
+<li><a href="figs/ROTUZ50_2026-01-08_HD_22064.png" target="_blank">2026-01-08: HD_22064,  0.437 -  0.455</a></li>
+<li><a href="figs/ROTUZ50_2026-01-08_CD-31_3271.png" target="_blank">2026-01-08: CD-31_3271,  0.493 -  0.552</a></li>
+<li><a href="figs/ROTUZ50_2026-01-11_CD-27_2812.png" target="_blank">2026-01-11: CD-27_2812,  0.506 -  0.545</a></li>
+<li><a href="figs/ROTUZ50_2026-01-13_HD_22064.png" target="_blank">2026-01-13: HD_22064, -0.016 -  0.000</a></li>
+<li><a href="figs/ROTUZ50_2026-01-13_HD_287990.png" target="_blank">2026-01-13: HD_287990, -0.015 -  0.002</a></li>
+<li><a href="figs/ROTUZ50_2026-01-13_BD-08_1175.png" target="_blank">2026-01-13: BD-08_1175,  0.373 -  0.387</a></li>
+<li><a href="figs/ROTUZ50_2026-01-16_HD_4875.png" target="_blank">2026-01-16: HD_4875, -0.010 - -0.005</a></li>
+<li><a href="figs/ROTUZ50_2026-01-16_TYC_8547-22-1.png" target="_blank">2026-01-16: TYC_8547-22-1,  0.001 -  0.081</a></li>
+<li><a href="figs/ROTUZ50_2026-01-17_HD_287990.png" target="_blank">2026-01-17: HD_287990,  0.294 -  0.311</a></li>
+<li><a href="figs/ROTUZ50_2026-01-18_TYC_8547-22-1.png" target="_blank">2026-01-18: TYC_8547-22-1,  0.472 -  0.552</a></li>
+<li><a href="figs/ROTUZ50_2026-01-19_CD-27_2812.png" target="_blank">2026-01-19: CD-27_2812,  0.527 -  0.563</a></li>
+<li><a href="figs/ROTUZ50_2026-01-19_CD-31_3271.png" target="_blank">2026-01-19: CD-31_3271,  0.450 -  0.504</a></li>
+<li><a href="figs/ROTUZ50_2026-01-20_TYC_8547-22-1.png" target="_blank">2026-01-20: TYC_8547-22-1, -0.056 -  0.022</a></li>
+<li><a href="figs/ROTUZ50_2026-01-22_HD_22064.png" target="_blank">2026-01-22: HD_22064, -0.031 - -0.017</a></li>
+<li><a href="figs/ROTUZ50_2026-01-22_CD-31_3271.png" target="_blank">2026-01-22: CD-31_3271, -0.016 -  0.036</a></li>
+<li><a href="figs/ROTUZ50_2026-01-22_TYC_8547-22-1.png" target="_blank">2026-01-22: TYC_8547-22-1,  0.415 -  0.492</a></li>
+<li><a href="figs/ROTUZ50_2026-01-24_BD-08_1175.png" target="_blank">2026-01-24: BD-08_1175, -0.006 -  0.006</a></li>
+<li><a href="figs/ROTUZ50_2026-01-26_HD_287990.png" target="_blank">2026-01-26: HD_287990, -0.011 -  0.004</a></li>
+<li><a href="figs/ROTUZ50_2026-01-31_BD-08_1175.png" target="_blank">2026-01-31: BD-08_1175,  0.389 -  0.401</a></li>
+<li><a href="figs/ROTUZ50_2026-01-31_EPIC_212822491.png" target="_blank">2026-01-31: EPIC_212822491,  0.504 -  0.514</a></li>
+<li><a href="figs/ROTUZ50_2026-02-02_CD-31_3271.png" target="_blank">2026-02-02: CD-31_3271, -0.060 - -0.012</a></li>
+<li><a href="figs/ROTUZ50_2026-02-02_TYC_8547-22-1.png" target="_blank">2026-02-02: TYC_8547-22-1,  0.007 -  0.078</a></li>
+<li><a href="figs/ROTUZ50_2026-02-03_CD-82_293.png" target="_blank">2026-02-03: CD-82_293,  0.489 -  0.502</a></li>
+<li><a href="figs/ROTUZ50_2026-02-04_TYC_8547-22-1.png" target="_blank">2026-02-04: TYC_8547-22-1,  0.478 -  0.548</a></li>
+<li><a href="figs/ROTUZ50_2026-02-05_CD-31_3271.png" target="_blank">2026-02-05: CD-31_3271,  0.473 -  0.520</a></li>
+<li><a href="figs/ROTUZ50_2026-02-06_TYC_8547-22-1.png" target="_blank">2026-02-06: TYC_8547-22-1, -0.051 -  0.019</a></li>
+<li><a href="figs/ROTUZ50_2026-02-08_HD_287990.png" target="_blank">2026-02-08: HD_287990, -0.007 -  0.006</a></li>
+<li><a href="figs/ROTUZ50_2026-02-08_CD-31_3271.png" target="_blank">2026-02-08: CD-31_3271,  0.007 -  0.052</a></li>
+<li><a href="figs/ROTUZ50_2026-02-08_TYC_8547-22-1.png" target="_blank">2026-02-08: TYC_8547-22-1,  0.421 -  0.489</a></li>
+<li><a href="figs/ROTUZ50_2026-02-15_CD-27_2812.png" target="_blank">2026-02-15: CD-27_2812, -0.029 - -0.000</a></li>
+<li><a href="figs/ROTUZ50_2026-02-19_CD-31_3271.png" target="_blank">2026-02-19: CD-31_3271, -0.037 -  0.004</a></li>
+<li><a href="figs/ROTUZ50_2026-02-19_TYC_8547-22-1.png" target="_blank">2026-02-19: TYC_8547-22-1,  0.012 -  0.075</a></li>
+<li><a href="figs/ROTUZ50_2026-02-19_CD-82_293.png" target="_blank">2026-02-19: CD-82_293, -0.001 -  0.021</a></li>
+<li><a href="figs/ROTUZ50_2026-02-21_HD_287990.png" target="_blank">2026-02-21: HD_287990, -0.003 -  0.008</a></li>
+<li><a href="figs/ROTUZ50_2026-02-21_TYC_8547-22-1.png" target="_blank">2026-02-21: TYC_8547-22-1,  0.483 -  0.545</a></li>
+<li><a href="figs/ROTUZ50_2026-02-22_CD-31_3271.png" target="_blank">2026-02-22: CD-31_3271,  0.496 -  0.536</a></li>
+<li><a href="figs/ROTUZ50_2026-02-22_CD-82_293.png" target="_blank">2026-02-22: CD-82_293,  0.469 -  0.493</a></li>
+<li><a href="figs/ROTUZ50_2026-02-23_CD-27_2812.png" target="_blank">2026-02-23: CD-27_2812, -0.009 -  0.018</a></li>
+<li><a href="figs/ROTUZ50_2026-02-23_TYC_8547-22-1.png" target="_blank">2026-02-23: TYC_8547-22-1, -0.046 -  0.015</a></li>
+<li><a href="figs/ROTUZ50_2026-02-25_TYC_8547-22-1.png" target="_blank">2026-02-25: TYC_8547-22-1,  0.425 -  0.486</a></li>
+<li><a href="figs/ROTUZ50_2026-02-27_CD-27_2812.png" target="_blank">2026-02-27: CD-27_2812,  0.501 -  0.527</a></li>
+<li><a href="figs/ROTUZ50_2026-02-28_HD_22064.png" target="_blank">2026-02-28: HD_22064,  0.016 -  0.022</a></li>
+<li><a href="figs/ROTUZ50_2026-03-03_CD-27_2812.png" target="_blank">2026-03-03: CD-27_2812,  0.011 -  0.036</a></li>
+<li><a href="figs/ROTUZ50_2026-03-06_HD_287990.png" target="_blank">2026-03-06: HD_287990,  0.001 -  0.010</a></li>
+<li><a href="figs/ROTUZ50_2026-03-07_CD-27_2812.png" target="_blank">2026-03-07: CD-27_2812,  0.521 -  0.545</a></li>
+<li><a href="figs/ROTUZ50_2026-03-07_CD-82_293.png" target="_blank">2026-03-07: CD-82_293,  0.509 -  0.539</a></li>
+<li><a href="figs/ROTUZ50_2026-03-08_CD-31_3271.png" target="_blank">2026-03-08: CD-31_3271, -0.015 -  0.020</a></li>
+<li><a href="figs/ROTUZ50_2026-03-08_TYC_8547-22-1.png" target="_blank">2026-03-08: TYC_8547-22-1,  0.016 -  0.072</a></li>
+<li><a href="figs/ROTUZ50_2026-03-09_HD_22064.png" target="_blank">2026-03-09: HD_22064,  0.001 -  0.004</a></li>
+<li><a href="figs/ROTUZ50_2026-03-10_TYC_8547-22-1.png" target="_blank">2026-03-10: TYC_8547-22-1,  0.488 -  0.542</a></li>
+<li><a href="figs/ROTUZ50_2026-03-10_CD-82_293.png" target="_blank">2026-03-10: CD-82_293, -0.020 -  0.011</a></li>
+<li><a href="figs/ROTUZ50_2026-03-12_TYC_8547-22-1.png" target="_blank">2026-03-12: TYC_8547-22-1, -0.041 -  0.012</a></li>
+<li><a href="figs/ROTUZ50_2026-03-13_HD_22064.png" target="_blank">2026-03-13: HD_22064,  0.438 -  0.441</a></li>
+<li><a href="figs/ROTUZ50_2026-03-15_CD-27_2812.png" target="_blank">2026-03-15: CD-27_2812,  0.541 -  0.563</a></li>
+<li><a href="figs/ROTUZ50_2026-03-15_EPIC_212822491.png" target="_blank">2026-03-15: EPIC_212822491,  0.499 -  0.518</a></li>
+<li><a href="figs/ROTUZ50_2026-03-19_HD_287990.png" target="_blank">2026-03-19: HD_287990,  0.005 -  0.012</a></li>
+<li><a href="figs/ROTUZ50_2026-03-22_CD-31_3271.png" target="_blank">2026-03-22: CD-31_3271,  0.473 -  0.504</a></li>
+<li><a href="figs/ROTUZ50_2026-03-22_EPIC_212822491.png" target="_blank">2026-03-22: EPIC_212822491, -0.014 -  0.007</a></li>
+<li><a href="figs/ROTUZ50_2026-03-25_BD-08_1175.png" target="_blank">2026-03-25: BD-08_1175,  0.380 -  0.386</a></li>
+<li><a href="figs/ROTUZ50_2026-03-25_CD-31_3271.png" target="_blank">2026-03-25: CD-31_3271,  0.006 -  0.036</a></li>
+<li><a href="figs/ROTUZ50_2026-03-26_CD-82_293.png" target="_blank">2026-03-26: CD-82_293,  0.490 -  0.530</a></li>
+<li><a href="figs/ROTUZ50_2026-03-27_TYC_8547-22-1.png" target="_blank">2026-03-27: TYC_8547-22-1,  0.492 -  0.539</a></li>
+<li><a href="figs/ROTUZ50_2026-03-29_TYC_8547-22-1.png" target="_blank">2026-03-29: TYC_8547-22-1, -0.037 -  0.009</a></li>
+<li><a href="figs/ROTUZ50_2026-03-29_EPIC_212822491.png" target="_blank">2026-03-29: EPIC_212822491,  0.474 -  0.496</a></li>
+<li><a href="figs/ROTUZ50_2026-03-29_CD-82_293.png" target="_blank">2026-03-29: CD-82_293, -0.039 -  0.002</a></li>
+</ul>
+<a id="Perth"><h3>Perth</h3></a>
+<ul>
+<li><a href="figs/Perth_2025-11-01_CD-27_2812.png" target="_blank">2025-11-01: CD-27_2812,  0.521 -  0.549</a></li>
+<li><a href="figs/Perth_2025-11-01_CD-31_3271.png" target="_blank">2025-11-01: CD-31_3271,  0.501 -  0.539</a></li>
+<li><a href="figs/Perth_2025-11-02_TYC_8547-22-1.png" target="_blank">2025-11-02: TYC_8547-22-1,  0.454 -  0.511</a></li>
+<li><a href="figs/Perth_2025-11-03_TYC_8829-111-1.png" target="_blank">2025-11-03: TYC_8829-111-1, -0.005 -  0.003</a></li>
+<li><a href="figs/Perth_2025-11-09_HD_287990.png" target="_blank">2025-11-09: HD_287990,  0.006 -  0.023</a></li>
+<li><a href="figs/Perth_2025-11-09_CD-27_2812.png" target="_blank">2025-11-09: CD-27_2812,  0.539 -  0.569</a></li>
+<li><a href="figs/Perth_2025-11-09_CD-82_293.png" target="_blank">2025-11-09: CD-82_293, -0.010 - -0.000</a></li>
+<li><a href="figs/Perth_2025-11-12_CD-31_3271.png" target="_blank">2025-11-12: CD-31_3271,  0.452 -  0.495</a></li>
+<li><a href="figs/Perth_2025-11-15_CD-31_3271.png" target="_blank">2025-11-15: CD-31_3271, -0.015 -  0.029</a></li>
+<li><a href="figs/Perth_2025-11-15_TYC_8547-22-1.png" target="_blank">2025-11-15: TYC_8547-22-1,  0.511 -  0.574</a></li>
+<li><a href="figs/Perth_2025-11-17_TYC_8547-22-1.png" target="_blank">2025-11-17: TYC_8547-22-1, -0.019 -  0.046</a></li>
+<li><a href="figs/Perth_2025-11-19_HD_22064.png" target="_blank">2025-11-19: HD_22064,  0.016 -  0.049</a></li>
+<li><a href="figs/Perth_2025-11-19_TYC_8547-22-1.png" target="_blank">2025-11-19: TYC_8547-22-1,  0.451 -  0.517</a></li>
+<li><a href="figs/Perth_2025-11-19_TYC_8829-111-1.png" target="_blank">2025-11-19: TYC_8829-111-1,  0.499 -  0.505</a></li>
+<li><a href="figs/Perth_2025-11-21_TYC_8547-22-1.png" target="_blank">2025-11-21: TYC_8547-22-1, -0.078 - -0.012</a></li>
+<li><a href="figs/Perth_2025-11-22_HD_4875.png" target="_blank">2025-11-22: HD_4875, -0.009 -  0.008</a></li>
+<li><a href="figs/Perth_2025-11-22_HD_287990.png" target="_blank">2025-11-22: HD_287990,  0.008 -  0.027</a></li>
+<li><a href="figs/Perth_2025-11-28_HD_22064.png" target="_blank">2025-11-28: HD_22064,  0.000 -  0.031</a></li>
+<li><a href="figs/Perth_2025-11-28_CD-27_2812.png" target="_blank">2025-11-28: CD-27_2812, -0.043 - -0.007</a></li>
+<li><a href="figs/Perth_2025-11-29_CD-31_3271.png" target="_blank">2025-11-29: CD-31_3271,  0.469 -  0.519</a></li>
+<li><a href="figs/Perth_2025-12-02_CD-31_3271.png" target="_blank">2025-12-02: CD-31_3271,  0.001 -  0.052</a></li>
+<li><a href="figs/Perth_2025-12-02_TYC_8547-22-1.png" target="_blank">2025-12-02: TYC_8547-22-1,  0.508 -  0.581</a></li>
+<li><a href="figs/Perth_2025-12-04_TYC_8547-22-1.png" target="_blank">2025-12-04: TYC_8547-22-1, -0.022 -  0.052</a></li>
+<li><a href="figs/Perth_2025-12-05_TYC_8829-111-1.png" target="_blank">2025-12-05: TYC_8829-111-1,  0.002 -  0.006</a></li>
+<li><a href="figs/Perth_2025-12-06_CD-27_2812.png" target="_blank">2025-12-06: CD-27_2812, -0.025 -  0.014</a></li>
+<li><a href="figs/Perth_2025-12-06_TYC_8547-22-1.png" target="_blank">2025-12-06: TYC_8547-22-1,  0.448 -  0.524</a></li>
+<li><a href="figs/Perth_2025-12-07_HD_22064.png" target="_blank">2025-12-07: HD_22064, -0.014 -  0.014</a></li>
+<li><a href="figs/Perth_2025-12-08_BD-08_1175.png" target="_blank">2025-12-08: BD-08_1175,  0.367 -  0.384</a></li>
+<li><a href="figs/Perth_2025-12-08_TYC_8547-22-1.png" target="_blank">2025-12-08: TYC_8547-22-1, -0.081 - -0.005</a></li>
+<li><a href="figs/Perth_2025-12-11_HD_22064.png" target="_blank">2025-12-11: HD_22064,  0.424 -  0.450</a></li>
+<li><a href="figs/Perth_2025-12-12_HD_4875.png" target="_blank">2025-12-12: HD_4875,  0.459 -  0.470</a></li>
+<li><a href="figs/Perth_2025-12-13_CD-31_3271.png" target="_blank">2025-12-13: CD-31_3271, -0.047 -  0.010</a></li>
+<li><a href="figs/Perth_2025-12-14_CD-27_2812.png" target="_blank">2025-12-14: CD-27_2812, -0.006 -  0.035</a></li>
+<li><a href="figs/Perth_2025-12-16_HD_22064.png" target="_blank">2025-12-16: HD_22064, -0.028 - -0.004</a></li>
+<li><a href="figs/Perth_2025-12-16_CD-31_3271.png" target="_blank">2025-12-16: CD-31_3271,  0.487 -  0.544</a></li>
+<li><a href="figs/Perth_2025-12-18_CD-27_2812.png" target="_blank">2025-12-18: CD-27_2812,  0.505 -  0.545</a></li>
+<li><a href="figs/Perth_2025-12-19_BD-08_1175.png" target="_blank">2025-12-19: BD-08_1175, -0.012 -  0.006</a></li>
+<li><a href="figs/Perth_2025-12-21_TYC_8547-22-1.png" target="_blank">2025-12-21: TYC_8547-22-1, -0.014 -  0.061</a></li>
+<li><a href="figs/Perth_2025-12-21_TYC_8829-111-1.png" target="_blank">2025-12-21: TYC_8829-111-1,  0.505 -  0.507</a></li>
+<li><a href="figs/Perth_2025-12-23_TYC_8547-22-1.png" target="_blank">2025-12-23: TYC_8547-22-1,  0.457 -  0.532</a></li>
+<li><a href="figs/Perth_2025-12-25_TYC_8547-22-1.png" target="_blank">2025-12-25: TYC_8547-22-1, -0.071 -  0.004</a></li>
+<li><a href="figs/Perth_2025-12-26_BD-08_1175.png" target="_blank">2025-12-26: BD-08_1175,  0.383 -  0.400</a></li>
+<li><a href="figs/Perth_2025-12-26_CD-27_2812.png" target="_blank">2025-12-26: CD-27_2812,  0.526 -  0.567</a></li>
+<li><a href="figs/Perth_2025-12-27_CD-31_3271.png" target="_blank">2025-12-27: CD-31_3271,  0.445 -  0.501</a></li>
+<li><a href="figs/Perth_2025-12-30_CD-31_3271.png" target="_blank">2025-12-30: CD-31_3271, -0.022 -  0.035</a></li>
+<li><a href="figs/Perth_2026-01-02_HD_4875.png" target="_blank">2026-01-02: HD_4875, -0.001 -  0.006</a></li>
+<li><a href="figs/Perth_2026-01-06_BD-08_1175.png" target="_blank">2026-01-06: BD-08_1175,  0.005 -  0.020</a></li>
+<li><a href="figs/Perth_2026-01-07_TYC_8547-22-1.png" target="_blank">2026-01-07: TYC_8547-22-1, -0.006 -  0.071</a></li>
+<li><a href="figs/Perth_2026-01-09_TYC_8547-22-1.png" target="_blank">2026-01-09: TYC_8547-22-1,  0.465 -  0.542</a></li>
+<li><a href="figs/Perth_2026-01-10_CD-31_3271.png" target="_blank">2026-01-10: CD-31_3271, -0.064 - -0.008</a></li>
+<li><a href="figs/Perth_2026-01-11_TYC_8547-22-1.png" target="_blank">2026-01-11: TYC_8547-22-1, -0.063 -  0.014</a></li>
+<li><a href="figs/Perth_2026-01-13_CD-31_3271.png" target="_blank">2026-01-13: CD-31_3271,  0.469 -  0.525</a></li>
+<li><a href="figs/Perth_2026-01-14_CD-27_2812.png" target="_blank">2026-01-14: CD-27_2812, -0.049 - -0.011</a></li>
+<li><a href="figs/Perth_2026-01-16_CD-31_3271.png" target="_blank">2026-01-16: CD-31_3271,  0.003 -  0.057</a></li>
+<li><a href="figs/Perth_2026-01-16_EPIC_212822491.png" target="_blank">2026-01-16: EPIC_212822491,  0.493 -  0.499</a></li>
+<li><a href="figs/Perth_2026-01-22_CD-27_2812.png" target="_blank">2026-01-22: CD-27_2812, -0.029 -  0.007</a></li>
+<li><a href="figs/Perth_2026-01-24_TYC_8547-22-1.png" target="_blank">2026-01-24: TYC_8547-22-1,  0.001 -  0.077</a></li>
+<li><a href="figs/Perth_2026-01-24_CD-82_293.png" target="_blank">2026-01-24: CD-82_293, -0.011 -  0.003</a></li>
+<li><a href="figs/Perth_2026-01-26_TYC_8547-22-1.png" target="_blank">2026-01-26: TYC_8547-22-1,  0.472 -  0.548</a></li>
+<li><a href="figs/Perth_2026-01-27_CD-31_3271.png" target="_blank">2026-01-27: CD-31_3271, -0.041 -  0.009</a></li>
+<li><a href="figs/Perth_2026-01-28_TYC_8547-22-1.png" target="_blank">2026-01-28: TYC_8547-22-1, -0.057 -  0.018</a></li>
+<li><a href="figs/Perth_2026-01-30_CD-27_2812.png" target="_blank">2026-01-30: CD-27_2812, -0.008 -  0.025</a></li>
+<li><a href="figs/Perth_2026-01-30_CD-31_3271.png" target="_blank">2026-01-30: CD-31_3271,  0.493 -  0.541</a></li>
+<li><a href="figs/Perth_2026-01-30_TYC_8547-22-1.png" target="_blank">2026-01-30: TYC_8547-22-1,  0.414 -  0.488</a></li>
+<li><a href="figs/Perth_2026-01-31_HD_22064.png" target="_blank">2026-01-31: HD_22064,  0.007 -  0.018</a></li>
+<li><a href="figs/Perth_2026-02-03_CD-27_2812.png" target="_blank">2026-02-03: CD-27_2812,  0.502 -  0.534</a></li>
+<li><a href="figs/Perth_2026-02-04_HD_22064.png" target="_blank">2026-02-04: HD_22064,  0.444 -  0.454</a></li>
+<li><a href="figs/Perth_2026-02-09_HD_22064.png" target="_blank">2026-02-09: HD_22064, -0.009 -  0.000</a></li>
+<li><a href="figs/Perth_2026-02-09_CD-82_293.png" target="_blank">2026-02-09: CD-82_293,  0.499 -  0.522</a></li>
+<li><a href="figs/Perth_2026-02-10_CD-31_3271.png" target="_blank">2026-02-10: CD-31_3271,  0.448 -  0.493</a></li>
+<li><a href="figs/Perth_2026-02-10_TYC_8547-22-1.png" target="_blank">2026-02-10: TYC_8547-22-1,  0.006 -  0.074</a></li>
+<li><a href="figs/Perth_2026-02-11_CD-27_2812.png" target="_blank">2026-02-11: CD-27_2812,  0.522 -  0.552</a></li>
+<li><a href="figs/Perth_2026-02-12_TYC_8547-22-1.png" target="_blank">2026-02-12: TYC_8547-22-1,  0.477 -  0.544</a></li>
+<li><a href="figs/Perth_2026-02-12_CD-82_293.png" target="_blank">2026-02-12: CD-82_293, -0.030 - -0.006</a></li>
+<li><a href="figs/Perth_2026-02-13_CD-31_3271.png" target="_blank">2026-02-13: CD-31_3271, -0.018 -  0.025</a></li>
+<li><a href="figs/Perth_2026-02-14_TYC_8547-22-1.png" target="_blank">2026-02-14: TYC_8547-22-1, -0.052 -  0.015</a></li>
+<li><a href="figs/Perth_2026-02-16_TYC_8547-22-1.png" target="_blank">2026-02-16: TYC_8547-22-1,  0.419 -  0.485</a></li>
+<li><a href="figs/Perth_2026-02-17_BD-08_1175.png" target="_blank">2026-02-17: BD-08_1175,  0.376 -  0.385</a></li>
+<li><a href="figs/Perth_2026-02-18_HD_22064.png" target="_blank">2026-02-18: HD_22064, -0.024 - -0.017</a></li>
+<li><a href="figs/Perth_2026-02-19_CD-27_2812.png" target="_blank">2026-02-19: CD-27_2812,  0.542 -  0.570</a></li>
+<li><a href="figs/Perth_2026-02-21_EPIC_212822491.png" target="_blank">2026-02-21: EPIC_212822491,  0.000 -  0.015</a></li>
+<li><a href="figs/Perth_2026-02-25_CD-82_293.png" target="_blank">2026-02-25: CD-82_293,  0.009 -  0.041</a></li>
+<li><a href="figs/Perth_2026-02-27_CD-31_3271.png" target="_blank">2026-02-27: CD-31_3271,  0.471 -  0.509</a></li>
+<li><a href="figs/Perth_2026-02-27_TYC_8547-22-1.png" target="_blank">2026-02-27: TYC_8547-22-1,  0.010 -  0.071</a></li>
+<li><a href="figs/Perth_2026-02-28_BD-08_1175.png" target="_blank">2026-02-28: BD-08_1175, -0.003 -  0.005</a></li>
+<li><a href="figs/Perth_2026-02-28_EPIC_212822491.png" target="_blank">2026-02-28: EPIC_212822491,  0.488 -  0.504</a></li>
+<li><a href="figs/Perth_2026-02-28_CD-82_293.png" target="_blank">2026-02-28: CD-82_293,  0.480 -  0.513</a></li>
+<li><a href="figs/Perth_2026-03-01_TYC_8547-22-1.png" target="_blank">2026-03-01: TYC_8547-22-1,  0.481 -  0.541</a></li>
+<li><a href="figs/Perth_2026-03-02_CD-31_3271.png" target="_blank">2026-03-02: CD-31_3271,  0.004 -  0.042</a></li>
+<li><a href="figs/Perth_2026-03-03_TYC_8547-22-1.png" target="_blank">2026-03-03: TYC_8547-22-1, -0.047 -  0.011</a></li>
+<li><a href="figs/Perth_2026-03-07_BD-08_1175.png" target="_blank">2026-03-07: BD-08_1175,  0.392 -  0.399</a></li>
+<li><a href="figs/Perth_2026-03-10_CD-27_2812.png" target="_blank">2026-03-10: CD-27_2812, -0.035 - -0.012</a></li>
+<li><a href="figs/Perth_2026-03-13_CD-31_3271.png" target="_blank">2026-03-13: CD-31_3271, -0.041 - -0.007</a></li>
+<li><a href="figs/Perth_2026-03-16_CD-31_3271.png" target="_blank">2026-03-16: CD-31_3271,  0.492 -  0.525</a></li>
+<li><a href="figs/Perth_2026-03-16_TYC_8547-22-1.png" target="_blank">2026-03-16: TYC_8547-22-1,  0.015 -  0.068</a></li>
+<li><a href="figs/Perth_2026-03-16_CD-82_293.png" target="_blank">2026-03-16: CD-82_293, -0.010 -  0.031</a></li>
+<li><a href="figs/Perth_2026-03-18_CD-27_2812.png" target="_blank">2026-03-18: CD-27_2812, -0.015 -  0.006</a></li>
+<li><a href="figs/Perth_2026-03-18_TYC_8547-22-1.png" target="_blank">2026-03-18: TYC_8547-22-1,  0.486 -  0.538</a></li>
+<li><a href="figs/Perth_2026-03-19_CD-82_293.png" target="_blank">2026-03-19: CD-82_293,  0.461 -  0.504</a></li>
+<li><a href="figs/Perth_2026-03-20_TYC_8547-22-1.png" target="_blank">2026-03-20: TYC_8547-22-1, -0.043 -  0.008</a></li>
+<li><a href="figs/Perth_2026-03-26_CD-27_2812.png" target="_blank">2026-03-26: CD-27_2812,  0.005 -  0.025</a></li>
+<li><a href="figs/Perth_2026-03-29_EPIC_212822491.png" target="_blank">2026-03-29: EPIC_212822491,  0.507 -  0.529</a></li>
+<li><a href="figs/Perth_2026-03-30_CD-27_2812.png" target="_blank">2026-03-30: CD-27_2812,  0.515 -  0.534</a></li>
+<li><a href="figs/Perth_2026-03-30_CD-31_3271.png" target="_blank">2026-03-30: CD-31_3271, -0.019 -  0.009</a></li>
+</ul>
+<a id="Sao Paulo"><h3>Sao Paulo</h3></a>
+<ul>
+<li><a href="figs/Sao_Paulo_2025-11-05_CD-27_2812.png" target="_blank">2025-11-05: CD-27_2812, -0.039 - -0.009</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-07_CD-31_3271.png" target="_blank">2025-11-07: CD-31_3271,  0.470 -  0.511</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-07_TYC_8547-22-1.png" target="_blank">2025-11-07: TYC_8547-22-1,  0.509 -  0.563</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-09_HD_4875.png" target="_blank">2025-11-09: HD_4875, -0.004 -  0.017</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-09_TYC_8547-22-1.png" target="_blank">2025-11-09: TYC_8547-22-1, -0.020 -  0.035</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-10_HD_22064.png" target="_blank">2025-11-10: HD_22064, -0.027 -  0.007</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-10_CD-31_3271.png" target="_blank">2025-11-10: CD-31_3271,  0.002 -  0.044</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-11_TYC_8547-22-1.png" target="_blank">2025-11-11: TYC_8547-22-1,  0.450 -  0.506</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-13_HD_287990.png" target="_blank">2025-11-13: HD_287990,  0.272 -  0.291</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-13_CD-27_2812.png" target="_blank">2025-11-13: CD-27_2812, -0.021 -  0.011</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-14_HD_22064.png" target="_blank">2025-11-14: HD_22064,  0.409 -  0.444</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-14_BD-08_1175.png" target="_blank">2025-11-14: BD-08_1175, -0.016 - -0.001</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-19_HD_22064.png" target="_blank">2025-11-19: HD_22064, -0.045 - -0.010</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-21_BD-08_1175.png" target="_blank">2025-11-21: BD-08_1175,  0.379 -  0.394</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-21_CD-27_2812.png" target="_blank">2025-11-21: CD-27_2812, -0.002 -  0.032</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-21_CD-31_3271.png" target="_blank">2025-11-21: CD-31_3271, -0.046 -  0.001</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-24_CD-31_3271.png" target="_blank">2025-11-24: CD-31_3271,  0.486 -  0.535</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-24_TYC_8547-22-1.png" target="_blank">2025-11-24: TYC_8547-22-1,  0.506 -  0.570</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-25_CD-27_2812.png" target="_blank">2025-11-25: CD-27_2812,  0.507 -  0.542</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-26_HD_287990.png" target="_blank">2025-11-26: HD_287990,  0.274 -  0.295</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-26_TYC_8547-22-1.png" target="_blank">2025-11-26: TYC_8547-22-1, -0.024 -  0.041</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-28_TYC_8547-22-1.png" target="_blank">2025-11-28: TYC_8547-22-1,  0.447 -  0.513</a></li>
+<li><a href="figs/Sao_Paulo_2025-11-30_TYC_8547-22-1.png" target="_blank">2025-11-30: TYC_8547-22-1, -0.083 - -0.016</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-02_BD-08_1175.png" target="_blank">2025-12-02: BD-08_1175, -0.002 -  0.015</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-03_CD-27_2812.png" target="_blank">2025-12-03: CD-27_2812,  0.525 -  0.563</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-06_HD_4875.png" target="_blank">2025-12-06: HD_4875, -0.023 - -0.009</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-08_CD-31_3271.png" target="_blank">2025-12-08: CD-31_3271, -0.029 -  0.025</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-09_HD_287990.png" target="_blank">2025-12-09: HD_287990,  0.276 -  0.300</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-09_BD-08_1175.png" target="_blank">2025-12-09: BD-08_1175,  0.393 -  0.411</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-11_CD-27_2812.png" target="_blank">2025-12-11: CD-27_2812,  0.543 -  0.584</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-11_CD-31_3271.png" target="_blank">2025-12-11: CD-31_3271,  0.503 -  0.559</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-11_TYC_8547-22-1.png" target="_blank">2025-12-11: TYC_8547-22-1,  0.503 -  0.578</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-13_TYC_8547-22-1.png" target="_blank">2025-12-13: TYC_8547-22-1, -0.027 -  0.049</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-15_TYC_8547-22-1.png" target="_blank">2025-12-15: TYC_8547-22-1,  0.444 -  0.521</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-17_TYC_8547-22-1.png" target="_blank">2025-12-17: TYC_8547-22-1, -0.086 - -0.008</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-18_HD_287990.png" target="_blank">2025-12-18: HD_287990, -0.030 - -0.006</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-20_HD_4875.png" target="_blank">2025-12-20: HD_4875,  0.004 -  0.015</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-22_HD_287990.png" target="_blank">2025-12-22: HD_287990,  0.278 -  0.302</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-22_CD-31_3271.png" target="_blank">2025-12-22: CD-31_3271,  0.455 -  0.517</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-25_CD-31_3271.png" target="_blank">2025-12-25: CD-31_3271, -0.012 -  0.051</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-26_HD_22064.png" target="_blank">2025-12-26: HD_22064,  0.005 -  0.029</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-26_EPIC_212822491.png" target="_blank">2025-12-26: EPIC_212822491, -0.008 - -0.006</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-28_TYC_8547-22-1.png" target="_blank">2025-12-28: TYC_8547-22-1,  0.502 -  0.587</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-30_CD-27_2812.png" target="_blank">2025-12-30: CD-27_2812, -0.036 -  0.009</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-30_TYC_8547-22-1.png" target="_blank">2025-12-30: TYC_8547-22-1, -0.026 -  0.058</a></li>
+<li><a href="figs/Sao_Paulo_2025-12-31_HD_287990.png" target="_blank">2025-12-31: HD_287990, -0.026 - -0.004</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-01_TYC_8547-22-1.png" target="_blank">2026-01-01: TYC_8547-22-1,  0.446 -  0.530</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-03_TYC_8547-22-1.png" target="_blank">2026-01-03: TYC_8547-22-1, -0.083 -  0.002</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-04_HD_22064.png" target="_blank">2026-01-04: HD_22064, -0.010 -  0.011</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-04_HD_287990.png" target="_blank">2026-01-04: HD_287990,  0.283 -  0.304</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-05_CD-31_3271.png" target="_blank">2026-01-05: CD-31_3271, -0.055 -  0.006</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-07_CD-27_2812.png" target="_blank">2026-01-07: CD-27_2812, -0.015 -  0.027</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-08_HD_22064.png" target="_blank">2026-01-08: HD_22064,  0.428 -  0.448</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-08_CD-31_3271.png" target="_blank">2026-01-08: CD-31_3271,  0.479 -  0.538</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-11_CD-27_2812.png" target="_blank">2026-01-11: CD-27_2812,  0.496 -  0.536</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-13_HD_22064.png" target="_blank">2026-01-13: HD_22064, -0.025 - -0.006</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-13_HD_287990.png" target="_blank">2026-01-13: HD_287990, -0.021 - -0.002</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-13_BD-08_1175.png" target="_blank">2026-01-13: BD-08_1175,  0.368 -  0.383</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-14_TYC_8547-22-1.png" target="_blank">2026-01-14: TYC_8547-22-1,  0.511 -  0.589</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-15_CD-27_2812.png" target="_blank">2026-01-15: CD-27_2812,  0.006 -  0.045</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-16_TYC_8547-22-1.png" target="_blank">2026-01-16: TYC_8547-22-1, -0.018 -  0.059</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-17_HD_287990.png" target="_blank">2026-01-17: HD_287990,  0.288 -  0.306</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-18_TYC_8547-22-1.png" target="_blank">2026-01-18: TYC_8547-22-1,  0.454 -  0.529</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-19_CD-27_2812.png" target="_blank">2026-01-19: CD-27_2812,  0.517 -  0.554</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-19_CD-31_3271.png" target="_blank">2026-01-19: CD-31_3271,  0.436 -  0.490</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-20_TYC_8547-22-1.png" target="_blank">2026-01-20: TYC_8547-22-1, -0.075 - -0.001</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-22_CD-31_3271.png" target="_blank">2026-01-22: CD-31_3271, -0.030 -  0.022</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-24_BD-08_1175.png" target="_blank">2026-01-24: BD-08_1175, -0.011 -  0.003</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-25_CD-31_3271.png" target="_blank">2026-01-25: CD-31_3271,  0.503 -  0.555</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-26_HD_287990.png" target="_blank">2026-01-26: HD_287990, -0.017 - -0.000</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-27_CD-27_2812.png" target="_blank">2026-01-27: CD-27_2812,  0.537 -  0.572</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-31_BD-08_1175.png" target="_blank">2026-01-31: BD-08_1175,  0.385 -  0.397</a></li>
+<li><a href="figs/Sao_Paulo_2026-01-31_EPIC_212822491.png" target="_blank">2026-01-31: EPIC_212822491,  0.499 -  0.510</a></li>
+<li><a href="figs/Sao_Paulo_2026-02-02_TYC_8547-22-1.png" target="_blank">2026-02-02: TYC_8547-22-1, -0.011 -  0.056</a></li>
+<li><a href="figs/Sao_Paulo_2026-02-04_TYC_8547-22-1.png" target="_blank">2026-02-04: TYC_8547-22-1,  0.460 -  0.526</a></li>
+<li><a href="figs/Sao_Paulo_2026-02-05_CD-31_3271.png" target="_blank">2026-02-05: CD-31_3271,  0.460 -  0.506</a></li>
+<li><a href="figs/Sao_Paulo_2026-02-06_TYC_8547-22-1.png" target="_blank">2026-02-06: TYC_8547-22-1, -0.069 - -0.004</a></li>
+<li><a href="figs/Sao_Paulo_2026-02-08_HD_287990.png" target="_blank">2026-02-08: HD_287990, -0.013 -  0.002</a></li>
+<li><a href="figs/Sao_Paulo_2026-02-08_CD-31_3271.png" target="_blank">2026-02-08: CD-31_3271, -0.007 -  0.039</a></li>
+<li><a href="figs/Sao_Paulo_2026-02-12_HD_287990.png" target="_blank">2026-02-12: HD_287990,  0.296 -  0.310</a></li>
+<li><a href="figs/Sao_Paulo_2026-02-15_CD-27_2812.png" target="_blank">2026-02-15: CD-27_2812, -0.039 - -0.010</a></li>
+<li><a href="figs/Sao_Paulo_2026-02-19_CD-31_3271.png" target="_blank">2026-02-19: CD-31_3271, -0.051 - -0.010</a></li>
+<li><a href="figs/Sao_Paulo_2026-02-19_TYC_8547-22-1.png" target="_blank">2026-02-19: TYC_8547-22-1, -0.006 -  0.052</a></li>
+<li><a href="figs/Sao_Paulo_2026-02-21_HD_287990.png" target="_blank">2026-02-21: HD_287990, -0.008 -  0.004</a></li>
+<li><a href="figs/Sao_Paulo_2026-02-21_TYC_8547-22-1.png" target="_blank">2026-02-21: TYC_8547-22-1,  0.466 -  0.523</a></li>
+<li><a href="figs/Sao_Paulo_2026-02-22_CD-31_3271.png" target="_blank">2026-02-22: CD-31_3271,  0.483 -  0.523</a></li>
+<li><a href="figs/Sao_Paulo_2026-02-23_CD-27_2812.png" target="_blank">2026-02-23: CD-27_2812, -0.019 -  0.008</a></li>
+<li><a href="figs/Sao_Paulo_2026-02-23_TYC_8547-22-1.png" target="_blank">2026-02-23: TYC_8547-22-1, -0.063 - -0.007</a></li>
+<li><a href="figs/Sao_Paulo_2026-02-28_HD_22064.png" target="_blank">2026-02-28: HD_22064,  0.008 -  0.015</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-03_CD-27_2812.png" target="_blank">2026-03-03: CD-27_2812,  0.002 -  0.027</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-04_HD_22064.png" target="_blank">2026-03-04: HD_22064,  0.446 -  0.452</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-06_HD_287990.png" target="_blank">2026-03-06: HD_287990, -0.004 -  0.006</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-07_CD-27_2812.png" target="_blank">2026-03-07: CD-27_2812,  0.512 -  0.536</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-08_CD-31_3271.png" target="_blank">2026-03-08: CD-31_3271, -0.028 -  0.007</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-08_TYC_8547-22-1.png" target="_blank">2026-03-08: TYC_8547-22-1, -0.000 -  0.049</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-09_HD_22064.png" target="_blank">2026-03-09: HD_22064, -0.007 - -0.002</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-10_TYC_8547-22-1.png" target="_blank">2026-03-10: TYC_8547-22-1,  0.471 -  0.519</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-10_CD-82_293.png" target="_blank">2026-03-10: CD-82_293, -0.003 -  0.001</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-11_CD-31_3271.png" target="_blank">2026-03-11: CD-31_3271,  0.505 -  0.539</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-12_TYC_8547-22-1.png" target="_blank">2026-03-12: TYC_8547-22-1, -0.058 - -0.010</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-15_CD-27_2812.png" target="_blank">2026-03-15: CD-27_2812,  0.532 -  0.554</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-15_EPIC_212822491.png" target="_blank">2026-03-15: EPIC_212822491,  0.494 -  0.514</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-19_HD_287990.png" target="_blank">2026-03-19: HD_287990, -0.000 -  0.008</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-22_CD-31_3271.png" target="_blank">2026-03-22: CD-31_3271,  0.461 -  0.491</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-22_EPIC_212822491.png" target="_blank">2026-03-22: EPIC_212822491, -0.019 -  0.003</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-25_BD-08_1175.png" target="_blank">2026-03-25: BD-08_1175,  0.376 -  0.383</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-25_CD-31_3271.png" target="_blank">2026-03-25: CD-31_3271, -0.006 -  0.023</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-25_TYC_8547-22-1.png" target="_blank">2026-03-25: TYC_8547-22-1,  0.005 -  0.046</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-26_CD-82_293.png" target="_blank">2026-03-26: CD-82_293,  0.508 -  0.519</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-27_TYC_8547-22-1.png" target="_blank">2026-03-27: TYC_8547-22-1,  0.476 -  0.516</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-29_TYC_8547-22-1.png" target="_blank">2026-03-29: TYC_8547-22-1, -0.053 - -0.014</a></li>
+<li><a href="figs/Sao_Paulo_2026-03-29_CD-82_293.png" target="_blank">2026-03-29: CD-82_293, -0.022 - -0.009</a></li>
+</ul>
+
+
+<hr WIDTH="100%">
+<br>Dr Pierre Maxted (<a href="mailto:p.maxted@keele.ac.uk">p.maxted@keele.ac.uk</a>)
+<br>Astrophysics Group
+<br>Keele University, Staffordshire, ST5 5BG
+<br> Tel:  +44-(0)1782-733457
+<br>
+<hr WIDTH="100%">
+</body>
+</html>
