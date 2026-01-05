@@ -91,7 +91,9 @@ The format of the data is described <a href="https://archive.eso.org/cms/eso-arc
 </ul>
 
 <p>These sections correspond to the overlap between the HARPS spectra and the useable parts of the UVES spectra. If you spot problems with any features then you can check the spectra provided order-by-order in the folder <code class="language-plaintext highlighter-rouge">output/</code> to see if it is problem with the order stitching, e.g. there is problem with the stitching of orders 97 and 98 due to a feature at the edges of these orders near 627.5 nm. There are not many such cases that I could see from a quick inspection. The UVES spectra extracted using “linear” mode were used for the disentangling in the wavelength range 602.4 - 627.2 nm.
-The spectra include orders where there are telluric features, (e.g. order 97). The disentangled spectra look ok, but I have not done any extensive testing to check how accurate the line depths are recovered in these regions.</p>
+The spectra include orders where there are telluric features, (e.g. order 97).
+Telluric correction has been done on the input spectra for disentangling using
+<a href="https://github.com/kgullikson88/Telluric-Fitter">TelFit</a>, and the disentangled spectra look ok, but I have not done any extensive testing to check how accurate the line depths are recovered in these regions.</p>
 
 <p>The format of the disentangled spectra is suitable for use with <a href="https://www.blancocuaresma.com/s/iSpec/manual/usage/basics">iSpec</a>.</p>
 
@@ -297,7 +299,7 @@ The 5 original FEROS spectra are included in the zip file. As can be seen, these
 are quite noisy and badly affected by outliers in a some wavelength regions.
 Several post-processing steps were required to obtain a consistent
 normalisation between the spectra so there are some regions where the flux
-ratio may not be very accurate (see <a href='#Note'>note on disentangling</a>).
+ratio may not be very accurate (see <a href='#note-on-disentangled-spectra'>note on disentangling</a>).
 The disentangling process is quite sensitive to outliers so some line
 profiles may be badly distorted by an outlier in one of the input spectra. It
 is recommended to check the raw spectra if you are not able to get a good fit
