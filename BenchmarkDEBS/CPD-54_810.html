@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Spectra of benchmark detached eclipsing binary stars</title>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+  <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">MathJax.Hub.Config({         tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] }       });</script>
+</head>
+<body text="#CCFFFF" bgcolor="#000033" link="#FFFFCC" vlink="#FFCCFF" alink="#FF6666">
+
+<h3>CPD-54 810</a></h3>
+
+Disentangled <a
+href="https://www.eso.org/sci/facilities/lasilla/instruments/feros.html",
+                 target="_blank">FEROS</a>
+spectra for both components over the wavelength range
+495.1&thinsp;&minus;&thinsp;580.2&nbsp;nm.
+<p>
+The format of the disentangled spectra is suitable for use with
+<a href="https://www.blancocuaresma.com/s/iSpec/manual/usage/basics"
+ target="_blank">iSpec</a>.
+
+<p>
+The 5 original FEROS spectra are included in the zip file. As can be seen, these are spectra
+are quite noisy and badly affected by outliers in a some wavelength regions.
+Several post-processing steps were required to obtain a consistent
+normalisation between the spectra so there are some regions where the flux
+ratio may not be very accurate (see <a href='#note-on-disentangled-spectra'>note on disentangling</a>).
+The disentangling process is quite sensitive to outliers so some line
+profiles may be badly distorted by an outlier in one of the input spectra. It
+is recommended to check the raw spectra if you are not able to get a good fit
+to some of the spectral features or find strange abundances based on only a
+few lines.
+<p>
+The format of the raw data is described <a
+href="https://archive.eso.org/cms/eso-archive-news/release-of-uves-echelle-science-data-products.html"
+target="_blank">here</a>. These spectra can also be read directly into iSpec,
+but the wavelength scale is &#8491; so remember to apply the mathematical expression <i> waveobs/10</i> to get
+wavelengths in nm.
+<p>
+
+<h5>CPD-54 810 A, F5 IV</h5>
+<ul>
+  <li>T<sub>eff</sub> = 6462 &plusmn; 43&thinsp;K</li>
+  <li>log g (cgs) = 3.984 &plusmn; 0.001</li>
+  <li>Mass = 1.309  &plusmn; 0.005  M<sub>&odot;</sub></li>
+  <li>Radius = 1.929  &plusmn; 0.003  R<sub>&odot;</sub></li>
+  <li>[Fe/H] &approx; &minus;0.0 &plusmn; 0.2
+</ul>
+
+<h5>CPD-54 810 B, F6 V</h5>
+<ul>
+  <li>T<sub>eff</sub> = 6331 &plusmn; 43&thinsp;K</li>
+  <li>log g (cgs) = 4.330 &plusmn; 0.003</li>
+  <li>Mass = 1.090  &plusmn; 0.003  M<sub>&odot;</sub></li>
+  <li>Radius = 1.182  &plusmn; 0.004  R<sub>&odot;</sub></li>
+</ul>
+
+<h5>Photometry</h5>
+ The following table gives the combined magnitude of the binary system, the
+ flux ratio in that band from the light curve analysis, and the individual
+ magnitudes of the two stars calculated from these input values.
+
+ <p>
+ <b>N.B.</b> Magnitudes for both stars in other photometric bands can be
+ estimated from the analysis described in Miller et al. (2022). This will
+ take some effort, but can be done if someone can  make good use of the
+ results.
+ <p>
+<table>
+  <tr>
+    <th>Band</th>
+    <th>Magnitude</th>
+    <th>Source</th>
+    <th>Flux ratio (B/A)</th>
+    <th>Ref.</th>
+    <th>m<sub>A</sub></th>
+    <th>m<sub>B</sub></th>
+  </tr>
+<tr>
+  <td align="left">B (Tycho)</td>
+  <td align="right">10.971 &plusmn; 0.049</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/1984ApJ...282..748H/abstract">2000A&A...355L..27H</a></td>
+  <td align="right">0.330 &plusmn; 0.001</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.517.5129M/abstract">2022MNRAS.517.5129M</a></td>
+  <td align="right">11.28 &plusmn; 0.05</td>
+  <td align="right">12.48 &plusmn; 0.05</td>
+</tr>
+<tr>
+  <td align="left">V (Tycho)</td>
+  <td align="right">10.560 &plusmn; 0.047</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/1984ApJ...282..748H/abstract">2000A&A...355L..27H</a></td>
+  <td align="right">0.341 &plusmn; 0.001</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.517.5129M/abstract">2022MNRAS.517.5129M</a></td>
+  <td align="right">10.88 &plusmn; 0.05 </td>
+  <td align="right">12.05 &plusmn; 0.05 </td>
+</tr>
+<tr>
+  <td align="left">I (Gunn-i)</td>
+  <td align="right">9.922 &plusmn; 0.03 </td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/2005yCat.2263....0D/abstract">2005yCat.2263....0D</a></td>
+  <td align="right">0.352 &plusmn; 0.001</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.517.5129M/abstract">2022MNRAS.517.5129M</a></td>
+  <td align="right">10.25 &plusmn; 0.03 </td>
+  <td align="right">11.38 &plusmn; 0.03 </td>
+</tr>
+</table>
+
+
+
+<h5>References</h5>
+<ul>
+  <li><a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.517.5129M/abstract"
+      target="_blank">Miller et al., 2022</a></li>
+</ul>
+
+
+<hr WIDTH="100%">
+<br>Dr Pierre Maxted (<a href="mailto:p.maxted@keele.ac.uk">p.maxted@keele.ac.uk</a>)
+<br>Astrophysics Group
+<br>Keele University, Staffordshire, ST5 5BG
+<br> Tel:  +44-(0)1782-733457
+<br>
+<hr WIDTH="100%">
+</body>
+</html>

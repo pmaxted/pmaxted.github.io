@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Spectra of benchmark detached eclipsing binary stars</title>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+  <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">MathJax.Hub.Config({         tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] }       });</script>
+</head>
+<body text="#CCFFFF" bgcolor="#000033" link="#FFFFCC" vlink="#FFCCFF" alink="#FF6666">
+
+  <h2> <font color="#FFFF99">AI Phe</font></h2>
+
+These processing and analysis of these spectra are described in detail in <a href="https://ui.adsabs.harvard.edu/abs/2026MNRAS.551g1398M/abstract">Maxted et al., 2026</a>.
+
+<p>The folder <code class="language-plaintext highlighter-rouge">uves/</code> contains 4 spectra of AI Phe B obtained with the red (arm R\(\approx\)100,000) and blue arm (R\(\approx\)80,000) of the UVES spectrograph during the total eclipse of the F7V companion. The raw data were reprocessed using version 6.1.8 of the UVES pipeline and renormalized using the algorithm described in <a href="https://ui.adsabs.harvard.edu/abs/2023ApJS..266...11B/abstract">Borisov et al., 2023</a>.</p>
+
+<p>There is a glitch due to poor order tracing/profile fitting around 610 nm. This appears to be due to a spurious absorption feature at 616.0 - 616.5 nm that can be seen in the spectra extracted using the “linear” mode of the uves pipeline (<code class="language-plaintext highlighter-rouge">uves/FLUX_SCI_POINT_REDU_L...fits</code>).
+The format of the data is described <a href="https://archive.eso.org/cms/eso-archive-news/release-of-uves-echelle-science-data-products.html">here</a>. These spectra can be read directly into <a href="https://www.blancocuaresma.com/s/iSpec/manual/usage/basics">iSpec</a>.</p>
+
+<p>The zip file also contains the result of disentangling 36 spectra obtained with the HARPS spectrograph together with the UVES spectra obtained in eclipse. The disentangling algorithm has been updated so that the spectra taken in eclipse determine the flux ratio in each order. This works better than estimating the flux ratio in the order from the light curve results, particularly in the far blue end of the spectrum. The disantangling also accounts for the different signal-to-noise in each spectrum using inverse variance weighting on a per-spectrum basis.</p>
+
+<p>The disentangling is done in short sections correpsonding to HARPS echelle orders. Several iterations are used to remove outliers, estimate the noise, and ensure that the normalisation of the input spectra is consistent, The spectra of the two components of AI Phe are then “stitched” to generate spectra in the following wavelengh ranges:</p>
+
+<ul>
+  <li>violet: 379.0- 449.1</li>
+  <li>blue: 464.5 - 530.4</li>
+  <li>green: 533.8 - 559.0</li>
+  <li>yellow: 568.7 - 615.9</li>
+  <li>red: 616.6 - 663.0</li>
+</ul>
+
+<p>These sections correspond to the overlap between the HARPS spectra and the useable parts of the UVES spectra. If you spot problems with any features then you can check the spectra provided order-by-order in the folder <code class="language-plaintext highlighter-rouge">output/</code> to see if it is problem with the order stitching, e.g. there is problem with the stitching of orders 97 and 98 due to a feature at the edges of these orders near 627.5 nm. There are not many such cases that I could see from a quick inspection. The UVES spectra extracted using “linear” mode were used for the disentangling in the wavelength range 602.4 - 627.2 nm.
+The spectra include orders where there are telluric features, (e.g. order 97).
+Telluric correction has been done on the input spectra for disentangling using
+<a href="https://github.com/kgullikson88/Telluric-Fitter">TelFit</a>, and the disentangled spectra look ok, but I have not done any extensive testing to check how accurate the line depths are recovered in these regions.</p>
+
+<p>The format of the disentangled spectra is suitable for use with <a href="https://www.blancocuaresma.com/s/iSpec/manual/usage/basics">iSpec</a>.</p>
+
+<h5 id="ai-phe-a-f7-v">AI Phe A, F7 V</h5>
+<ul>
+  <li>T\(_{\rm eff} = 6199 \pm 33\) K</li>
+  <li>log \(g = 4.002 \pm 0.001\)</li>
+  <li>Mass \( = 1.1938 \pm 0.0008 M_{\odot}\)</li>
+  <li>Radius \( = 1.8050 \pm 0.0022 R_{\odot}\)</li>
+</ul>
+
+<h5 id="ai-phe-b-k0-iv">AI Phe B, K0 IV</h5>
+<ul>
+  <li>T\(_{\rm eff} = 5094 \pm 27\) K</li>
+  <li>\(\log g  = 3.598 \pm 0.001\)</li>
+  <li>Mass  \( = 1.2438 \pm 0.0008 M_{\odot}\)</li>
+  <li>Radius \( = 2.9332 \pm 0.0023 R_{\odot}\)</li>
+</ul>
+
+<h5 id="photometry">Photometry</h5>
+<p>The following table gives the combined magnitude of the binary system, the flux ratio in that band from the light curve analysis, and the individual magnitudes of the two stars calculated from these input values.</p>
+
+<table>
+  <tr>
+    <th>Band</th>
+    <th>Magnitude</th>
+    <th>Source</th>
+    <th>Flux ratio (B/A)</th>
+    <th>Ref.</th>
+    <th>m<sub>A</sub></th>
+    <th>m<sub>B</sub></th>
+  </tr>
+<tr>
+  <td align="left">U (Johnson)</td align="left">
+  <td align="right">9.406 &plusmn; 0.020</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/1984ApJ...282..748H/abstract">1984ApJ...282..748H</a></td>
+  <td align="right">0.446 &plusmn; 0.020</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/1988A&A...196..128A/abstract">1988A&A...196..128A</a></td>
+  <td align="right">9.806 &plusmn; 0.025</td>
+  <td align="right">10.680&plusmn; 0.039</td>
+</tr>
+<tr>
+  <td align="left">B (Johnson)</td align="left">
+  <td align="right">9.254 &plusmn; 0.014</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/1984ApJ...282..748H/abstract">1984ApJ...282..748H</a></td>
+  <td align="right">0.727 &plusmn; 0.011</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/1988A&A...196..128A/abstract">1988A&A...196..128A</a></td>
+  <td align="right">9.847 &plusmn; 0.016</td>
+  <td align="right">10.193&plusmn; 0.017</td>
+</tr>
+<tr>
+  <td align="left">V (Johnson)</td align="left">
+  <td align="right">8.578 &plusmn; 0.013</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/1984ApJ...282..748H/abstract">1984ApJ...282..748H</a></td>
+  <td align="right">1.011 &plusmn; 0.009</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/1988A&A...196..128A/abstract">1988A&A...196..128A</a></td>
+  <td align="right">9.337 &plusmn; 0.014</td>
+  <td align="right">9.325 &plusmn; 0.014</td>
+</tr>
+<tr>
+  <td align="left">R (Johnson)</td align="left">
+  <td align="right">7.994 &plusmn; 0.014</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/1984ApJ...282..748H/abstract">1984ApJ...282..748H</a></td>
+  <td align="right">1.198 &plusmn; 0.024</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/1988A&A...196..128A/abstract">1988A&A...196..128A</a></td>
+  <td align="right">8.849 &plusmn; 0.018</td>
+  <td align="right">8.652 &plusmn; 0.017</td>
+</tr>
+<tr>
+  <td align="left">I (Johnson)</td align="left">
+  <td align="right">7.612 &plusmn; 0.020</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/1984ApJ...282..748H/abstract">1984ApJ...282..748H</a></td>
+  <td align="right">1.406 &plusmn; 0.023</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/1988A&A...196..128A/abstract">1988A&A...196..128A</a></td>
+  <td align="right">8.565 &plusmn; 0.019</td>
+  <td align="right">8.195 &plusmn; 0.018</td>
+</tr>
+<tr>
+  <td align="left">J (2MASS)</td align="left">
+  <td align="right">7.301 &plusmn; 0.023</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/2003yCat.2246....0C/abstract">2003yCat.2246....0C</a></td>
+  <td align="right">1.658 &plusmn; 0.023</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.2899M/abstract">2020MNRAS.497.2899M</a></td>
+  <td align="right">8.362 &plusmn; 0.025</td>
+  <td align="right">7.813 &plusmn; 0.024</td>
+</tr>
+<tr>
+  <td align="left">H (2MASS)</td align="left">
+  <td align="right">6.935 &plusmn; 0.034</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/2003yCat.2246....0C/abstract">2003yCat.2246....0C</a></td>
+  <td align="right">2.012 &plusmn; 0.010</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/2019A&A...632A..31G/abstract">2019A&A...632A..31G</a></td>
+  <td align="right">8.132 &plusmn; 0.034</td>
+  <td align="right">7.373 &plusmn; 0.034</td>
+</tr>
+<tr>
+  <td align="left">Ks (2MASS)</td align="left">
+  <td align="right">6.819 &plusmn; 0.026</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/2003yCat.2246....0C/abstract">2003yCat.2246....0C</a></td>
+  <td align="right">2.076 &plusmn; 0.030</td>
+  <td><a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.2899M/abstract">2020MNRAS.497.2899M</a></td>
+  <td align="right">8.039 &plusmn; 0.028</td>
+  <td align="right">7.246 &plusmn; 0.026</td>
+</tr>
+</table>
+
+
+
+<p>References</p>
+<ul>
+  <li><a href="https://ui.adsabs.harvard.edu/abs/2026MNRAS.551g1398M/abstract">Maxted et al., 2026</a></li>
+  <li><a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.498..332M/abstract">Maxted et al., 2020</a></li>
+  <li><a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.2899M/abstract">Miller et al., 2020</a></li>
+</ul>
+
+
+<hr WIDTH="100%">
+<br>Dr Pierre Maxted (<a href="mailto:p.maxted@keele.ac.uk">p.maxted@keele.ac.uk</a>)
+<br>Astrophysics Group
+<br>Keele University, Staffordshire, ST5 5BG
+<br> Tel:  +44-(0)1782-733457
+<br>
+<hr WIDTH="100%">
+</body>
+</html>
